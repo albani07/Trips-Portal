@@ -8,24 +8,16 @@ body {
     margin: 0;
 }
 
-// .beach {
-//     width: 100px;
-// }
-
-// .berat {
-//     width: 100px;
-// }
-
-// .sarande {
-//     width: 100px;
-// }
-
-// .theth {
-//     width: 100px;
-// }
-
+// 
 .home-images {
+    padding-bottom: 50px;
+}
+
+.img-fluid {
+    height: 400px;
     width: 100%;
-    white-space: nowrap;
-    display: flex;
+}
+
+.description {
+    padding-bottom: 50px;
 }
