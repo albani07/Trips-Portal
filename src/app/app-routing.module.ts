@@ -3,17 +3,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExampleComponent } from './example/example.component';
 import { TripsComponent } from './trips/trips.component';
 import { HomeContentComponent } from './home-content/home-content.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'navbar', component: NavbarComponent },
   { path: '', component: HomeContentComponent },
   { path: 'example', component: ExampleComponent },
-  { path: 'trips', component: TripsComponent }
+  { path: 'trips', component: TripsComponent },
 
   // { path: 'trips/:id', component: SingleTripComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
