@@ -1,0 +1,202 @@
+<!-- <p>single-trip-theth works!</p> -->
+
+<!-- The carousel -->
+
+<div class="container">
+  <div class="carousel">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="imagePath1" class="image" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Explore the small village of Theth Albania</h3>
+          <p>
+            You will find peace and tranquility here, a simply way of living.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="imagePath2" class="image" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Hike to the blue eye</h3>
+          <p>
+            The water is incredibly blue, clear and cold! It looks extremely
+            tempting to jump in and swim but, think twice!
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="imagePath3" class="image" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Experience the guesthouse</h3>
+          <p>
+            Depending on your guesthouse, you might have some activities to do.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="imagePath4" class="image" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>See the Grunas waterfall</h3>
+          <p>
+            This is a short one hour hike from Theth, and therefore a fun and
+            easy thing to do in Theth!
+          </p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
+<br />
+
+<!-- Title and general information -->
+<div class="container">
+  <h1>Theth - Albanian Alps</h1>
+  <ngb-rating [(rate)]="currentRate"></ngb-rating>
+  <hr />
+  <pre>Rate: <b>{{currentRate}}</b></pre>
+  <h5>
+    Theth is a small village in the Shkodra region of Albania. You could say
+    that the place is somewhat isolated, which is exactly why the region is so
+    beautiful! You get to see this part of nature relatively untouched.
+  </h5>
+</div>
+
+<!-- Location -->
+<div class="container">
+  <img [src]="locationIcon" class="icon" alt="" />
+  <span
+    ><a href="https://goo.gl/maps/8yabRjYNvdx11jR97" class="location"
+      >Location</a
+    ></span
+  >
+</div>
+<br />
+
+<!-- COVID information -->
+<div class="container">
+  <p>
+    <ngb-alert [dismissible]="false">
+      <h4>
+        <a
+          href="https://crisis24.garda.com/alerts/2022/05/albania-authorities-lift-all-covid-19-restrictions-as-of-may-5-update-37"
+          >COVID-19</a
+        >
+      </h4>
+      Click here to see the Covid Restrictions.
+    </ngb-alert>
+  </p>
+  <br />
+
+  <!-- Recommendations -->
+
+  <div class="container">
+    <h1>Recommendations</h1>
+    <hr />
+    <h5>Best time to visit Theth</h5>
+    <p>
+      There can still be snow around Theth in the month of June! Therefore, we
+      recommend to visit Theth Albania anywhere <b>between July to October</b>.
+      Around the end of October and the beginning of November the facilities in
+      and around Theth start closing.
+    </p>
+    <h5>Tips</h5>
+
+    <ol>
+      <li>Make sure to withdraw cash, as there won't be any ATMs in Theth.</li>
+      <li>
+        Bring with yourself:
+        <i>sunscreen, resusable water bottles and good shoes for hiking</i>.
+      </li>
+      <li>
+        We also suggest you download the free app <b>maps.me</b> in case you get
+        lost.
+      </li>
+    </ol>
+  </div>
+
+  <!-- Itinerary -->
+
+  <div class="container">
+    <div class="container">
+      <h2>Itinerary</h2>
+      <hr />
+      <ngb-accordion #acc="ngbAccordion">
+        <ngb-panel
+          id="toggle-1"
+          class="days"
+          title="Day 1: Hike to the blue eye "
+        >
+          <ng-template ngbPanelContent>
+            This is probably the most popular attraction in Theth, Albania. The
+            blue eye is a water spring deep in the mountains of Albania. The
+            water is incredibly blue, clear and cold! It looks extremely
+            tempting to jump in and swim, but, think twice! It is so cold, you
+            really don’t want to be in there. It’s about a 6 hour hike
+            round-trip through mountains, rivers, cow fields and lots of trees.
+            You do not want to miss this hike.
+            <hr />
+            <!-- <img [src]="oiaImg" class="itineraryImages" alt="OIA" /> -->
+          </ng-template>
+        </ngb-panel>
+        <br />
+        <ngb-panel id="toggle-2" title="Day 2: See the Grunas waterfall">
+          <ng-template ngbPanelContent>
+            This is a short one hour hike from Theth, and therefore a fun and
+            easy thing to do in Theth! Again, you will walk through the
+            beautiful nature of Albania and breathe in the crisp mountain air!
+            <hr />
+            <!-- <img [src]="quadImg" class="itineraryImages" alt="QUAD" /> -->
+          </ng-template>
+        </ngb-panel>
+        <br />
+        <ngb-panel
+          id="toggle-3"
+          title="Day 3: Explore the small village of Theth Albania"
+        >
+          <ng-template ngbPanelContent>
+            There is not much to do in the small village of Theth, but that is
+            one of the reasons you will enjoy your stay! You will find peace and
+            tranquility here, a simply way of living. Visit the church in the
+            village, which is beautifully surrounded by all the mountains. Then,
+            eat at one of the restaurants and observe the stone houses where the
+            local people live. Our favorite thing to do in Theth was to observe
+            the farm animals graze the day away. Expect to see sheep, pigs,
+            horses and much more!
+            <hr />
+          </ng-template>
+        </ngb-panel>
+        <br />
+        <ngb-panel id="toggle-4" title="Day 4: Hike from Theth to Valbona">
+          <ng-template ngbPanelContent>
+            This is such an iconic hike! You hike from the village of Theth to
+            the village of Valbona, which is about an 8 hour hike in total. You
+            will feel like you’re on the moon or maybe Mount Everest. The rocks
+            are white and grey, with the beautiful green trees at the bottom in
+            the Valbona Pass.
+            <b>Difficulty level: intermediate. </b>
+            <hr />
+          </ng-template>
+        </ngb-panel>
+        <br />
+      </ngb-accordion>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Booking -->
+  <!-- 1. inline datepicker -->
+
+  <div class="container">
+    <h2>Book Now</h2>
+    <hr />
+    <ngb-datepicker #d></ngb-datepicker>
+  </div>
+</div>

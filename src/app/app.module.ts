@@ -7,6 +7,8 @@ import { ExampleComponent } from './example/example.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { TripsComponent } from './trips/trips.component';
 import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
+import { SingleTripThethComponent } from './trips/single-trip-theth/single-trip-theth.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
     ExampleComponent,
     HomeContentComponent,
     TripsComponent,
-    JoinOurTeamComponent
+    JoinOurTeamComponent,
+    SingleTripThethComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
