@@ -2,30 +2,33 @@
 @media screen and (max-width: 768px) {}
 
 /* mobile*/
-body {
-    background-color: white;
+.container {
+    background-color: rgb(240, 241, 234);
     padding: 0;
-    margin: 0;
+    // margin: 100%;
 }
 
-// .beach {
-//     width: 100px;
-// }
-
-// .berat {
-//     width: 100px;
-// }
-
-// .sarande {
-//     width: 100px;
-// }
-
-// .theth {
-//     width: 100px;
-// }
-
+// 
 .home-images {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.img-fluid {
+    height: 400px;
     width: 100%;
-    white-space: nowrap;
-    display: flex;
+}
+
+// .description {
+//     padding-bottom: 0px;
+// }
+
+.row {
+    justify-content: space-around;
+}
+
+h3 {
+    margin-top: 20px;
+    padding-bottom: 30px;
+
 }
