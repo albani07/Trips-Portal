@@ -7,6 +7,7 @@ import { ExampleComponent } from './example/example.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { TripsComponent } from './trips/trips.component';
 import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
