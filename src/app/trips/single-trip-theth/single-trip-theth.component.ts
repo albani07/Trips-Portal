@@ -14,7 +14,7 @@ export class SingleTripThethComponent implements OnInit {
   // oiaImg: string;
   // quadImg: string;
   currentRate = 9.6;
-  public isCollagpsed = true;
+  public isCollapsed = true;
   // images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`); //in cases of having a Database where all the images are stored
   constructor() {
     this.imagePath1 = '../../assets/images/single-trip-pictures/theth1.jpg';
