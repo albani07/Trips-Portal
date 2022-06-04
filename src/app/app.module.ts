@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SignupComponent } from './signup/signup.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
+    JoinOurTeamComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +35,9 @@ import { SignupComponent } from './signup/signup.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
