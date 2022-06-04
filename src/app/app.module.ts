@@ -9,6 +9,7 @@ import { TripsComponent } from './trips/trips.component';
 import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
 import { SingleTripThethComponent } from './trips/single-trip-theth/single-trip-theth.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeContentComponent,
     TripsComponent,
     JoinOurTeamComponent,
-    SingleTripThethComponent
+    SingleTripThethComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
