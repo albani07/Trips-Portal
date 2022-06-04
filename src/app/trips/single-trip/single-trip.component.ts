@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  NgbDateStruct,
+  NgbCalendar,
+  NgbInputDatepicker,
+} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-single-trip-theth',
-  templateUrl: './single-trip-theth.component.html',
-  styleUrls: ['./single-trip-theth.component.scss'],
+  selector: 'app-single-trip',
+  templateUrl: './single-trip.component.html',
+  styleUrls: ['./single-trip.component.scss'],
 })
-export class SingleTripThethComponent implements OnInit {
+export class SingleTripComponent implements OnInit {
   imagePath1: string;
   imagePath2: string;
   imagePath3: string;

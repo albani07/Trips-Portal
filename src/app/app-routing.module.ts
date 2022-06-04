@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
-import { SingleTripThethComponent } from './trips/single-trip-theth/single-trip-theth.component';
+import { SingleTripComponent } from './trips/single-trip/single-trip.component';
 
 const routes: Routes = [
   { path: '', component: HomeContentComponent },
@@ -18,9 +18,7 @@ const routes: Routes = [
   { path: 'example', component: ExampleComponent },
   { path: 'trips', component: TripsComponent },
   { path: 'join-our-team', component: JoinOurTeamComponent },
-  { path: 'trips/single-trip-theth', component: SingleTripThethComponent },
-
-  // { path: 'trips/:id', component: SingleTripComponent },
+  { path: 'trips/:id', component: SingleTripComponent },
 ];
 
 @NgModule({

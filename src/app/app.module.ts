@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SingleTripComponent } from './trips/single-trip/single-trip.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    JoinOurTeamComponent
+    JoinOurTeamComponent,
+    SingleTripComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
