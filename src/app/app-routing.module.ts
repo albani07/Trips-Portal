@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: '', component: HomeContentComponent },
   { path: 'example', component: ExampleComponent },
   { path: 'trips', component: TripsComponent },
-  { path: 'join-our-team', component: JoinOurTeamComponent }
+  { path: 'join-our-team', component: JoinOurTeamComponent },
+  { path: 'trips/:id', component: ExampleComponent },
 
   // { path: 'trips/:id', component: SingleTripComponent },
 ];

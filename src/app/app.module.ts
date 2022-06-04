@@ -8,6 +8,7 @@ import { HomeContentComponent } from './home-content/home-content.component';
 import { TripsComponent } from './trips/trips.component';
 import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TripsService } from './trips/trips.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [TripsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
