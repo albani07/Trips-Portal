@@ -32,7 +32,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SignupComponent,
     JoinOurTeamComponent,
     TripCardComponent,
-    SingleTripComponent
+    SingleTripComponent,
   ],
   imports: [
     BrowserModule,
