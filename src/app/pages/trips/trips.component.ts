@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Trip } from 'src/app/interfaces/trip';
+import { TripService } from 'src/app/services/trip.service';
 
 @Component({
   selector: 'app-trips',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trips.component.scss']
 })
 export class TripsComponent implements OnInit {
+  trips: Trip[];
+  tripService: TripService;
 
-  constructor() { }
+  filters = {
+    date: null, // current date
+    destination: null // or something special
+  }
+
+  constructor(tripService: TripService) {
+    this.tripService = tripService;
+    this.trips = tripService.all();
+  }
 
   ngOnInit(): void {
+  }
+
+  filterTrips(): void {
+    this.trips = this.tripService.filter(this.filters);
   }
 
 }

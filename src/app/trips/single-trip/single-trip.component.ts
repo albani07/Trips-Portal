@@ -25,5 +25,5 @@ export class SingleTripComponent implements OnInit {
     // this.oiaImg = '../../assets/images/oia.jpg';
     // this.quadImg = '../../assets/images/fira.jpg';
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
