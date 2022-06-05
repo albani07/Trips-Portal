@@ -7,24 +7,24 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
-import { ExampleComponent } from './example/example.component';
-import { HomeContentComponent } from './home-content/home-content.component';
-import { TripsComponent } from './trips/trips.component';
+// import { ExampleComponent } from './example/example.component';
+import { HomeContentComponent } from './pages/home-content/home-content.component';
+import { TripsComponent } from './pages/trips/trips.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { JoinOurTeamComponent } from './join-our-team/join-our-team.component';
+import { NavbarComponent } from './shared/layout/navbar/navbar.component';
+// import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { SignupComponent } from './pages/auth/signup/signup.component';
+import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent,
+    // ExampleComponent,
     HomeContentComponent,
     TripsComponent,
     NavbarComponent,
-    HomeComponent,
+    // HomeComponent,
     LoginComponent,
     SignupComponent,
     JoinOurTeamComponent
