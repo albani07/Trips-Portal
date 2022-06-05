@@ -6,7 +6,7 @@ import { HomeContentComponent } from './pages/home-content/home-content.componen
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { NavbarComponent } from './shared/layout/navbar/navbar.component';
-import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.component';
+import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
 
 const routes: Routes = [
   { path: '', component: HomeContentComponent },

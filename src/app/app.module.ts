@@ -15,7 +15,8 @@ import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 // import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
-import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.component';
+import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
+import { TripCardComponent } from './shared/cards/trip-card/trip-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.c
     // HomeComponent,
     LoginComponent,
     SignupComponent,
-    JoinOurTeamComponent
+    JoinOurTeamComponent,
+    TripCardComponent
   ],
   imports: [
     BrowserModule,
