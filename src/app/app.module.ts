@@ -16,6 +16,8 @@ import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.component';
+import { SingleTripComponent } from './trips/single-trip/single-trip.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.c
     // HomeComponent,
     LoginComponent,
     SignupComponent,
-    JoinOurTeamComponent
+    JoinOurTeamComponent,
+    SingleTripComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +38,10 @@ import { JoinOurTeamComponent } from './pages/auth/join-our-team/join-our-team.c
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
