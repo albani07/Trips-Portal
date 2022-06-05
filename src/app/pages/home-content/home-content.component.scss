@@ -1,27 +1,50 @@
 /* tablet*/
-@media screen and (max-width: 768px) {}
+// @media screen and (max-width: 768px) {}
 
 /* mobile*/
-.container {
+.home-short-description {
     background-color: rgb(240, 241, 234);
-    padding: 0;
+    padding-top: 100px;
     // margin: 100%;
+    // width: 100%;
+
 }
 
 // 
-.home-images {
+.home-cover {
     // padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.img-fluid {
-    height: 400px;
+    // padding-bottom: 50px;
+    // width: 100%;
+    // height: 400px;
     width: 100%;
+    margin: 0 auto;
 }
 
-// .description {
-//     padding-bottom: 0px;
-// }
+video {
+    // height: 400px;
+    // width: 100%;
+    // width: 100vw;
+    /* Could also use width: 100%; */
+    // height: 100vh;
+    // object-fit: cover;
+    // position: fixed;
+    /* Change position to absolute if you don't want it to take up the whole page */
+    // left: 0px;
+    // top: 0px;
+    // z-index: -5;
+    object-fit: fill;
+    width: 100%;
+    height: 80vh;
+}
+
+.description {
+    color: white;
+
+}
+
+.home-cards {
+    color: white;
+}
 
 .row {
     justify-content: space-around;
