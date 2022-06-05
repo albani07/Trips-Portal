@@ -17,6 +17,8 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
 import { TripCardComponent } from './shared/cards/trip-card/trip-card.component';
+import { SingleTripComponent } from './trips/single-trip/single-trip.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { TripCardComponent } from './shared/cards/trip-card/trip-card.component'
     LoginComponent,
     SignupComponent,
     JoinOurTeamComponent,
-    TripCardComponent
+    TripCardComponent,
+    SingleTripComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { TripCardComponent } from './shared/cards/trip-card/trip-card.component'
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

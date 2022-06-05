@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
+import { SingleTripComponent } from './trips/single-trip/single-trip.component';
 
 const routes: Routes = [
   { path: '', component: HomeContentComponent },
@@ -16,9 +17,8 @@ const routes: Routes = [
   // { path: '', component: HomeContentComponent },
   // { path: 'example', component: ExampleComponent },
   { path: 'trips', component: TripsComponent },
-  { path: 'join-our-team', component: JoinOurTeamComponent }
-
-  // { path: 'trips/:id', component: SingleTripComponent },
+  { path: 'join-our-team', component: JoinOurTeamComponent },
+  { path: 'trips/:id', component: SingleTripComponent },
 ];
 
 @NgModule({
