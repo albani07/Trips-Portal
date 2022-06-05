@@ -35,7 +35,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     SignupComponent,
     JoinOurTeamComponent,
     TripCardComponent,
-    SingleTripComponent
+    SingleTripComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 
 
-.search-sectionwithimage {
+.sectionwithimage {
     background-image: url(https://alpenews.al/wp-content/uploads/2019/04/58444992_841275662899700_4125806624612810752_n-1.jpg);
     background-size: cover;
     color: #ffffff;
@@ -11,7 +11,7 @@
     background-position: center;
 
 }
-.search-container{
+.main-container{
     position: relative;
     width: 100%;
     max-width: 1092px;
@@ -19,7 +19,7 @@
     padding: 0 20px;
     float: none !important;  
 }
-.search-section{
+.msg-section{
     justify-content: start;
     font-size: 3rem;
     line-height: 3.875rem;
