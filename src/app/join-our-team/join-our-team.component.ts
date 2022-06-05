@@ -23,18 +23,23 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class JoinOurTeamComponent implements OnInit {
-
+  
   constructor() { }
-
+  
+  name: string=''
+  lastName: string = ''
+  phoneNumber : string = ''
+  email: string = ''
+  
   hidden: boolean = false
-
+  
   contact : boolean = false
   
-
+  
   get stateName() {
     return this.hidden? 'hidden': 'show'
   }
-
+  
 
   
   

@@ -140,19 +140,18 @@
               </div>
 <br>
 
-
               <h6>Enter your Name and Last Name</h6>
               <hr class="my-4">
               <div class="input-group">
-                <input type="text" required aria-label="First name" class="form-control">
-                <input type="text" required aria-label="Last name" class="form-control">
+                <input type="text" required aria-label="First name" class="form-control" placeholder="Name" [(ngModel)]="name">
+                <input type="text" required aria-label="Last name" class="form-control" placeholder="Last Name" [(ngModel)]="lastName">
               </div>
 
               <hr class="my-6">
                
               <h6>Enter your phone number</h6>
               <div class="input-group mb-3">
-                <input type="number" required  class="form-control">
+                <input type="number" required  class="form-control" placeholder="Phone Number" [(ngModel)]="phoneNumber">
               </div>
 
               <hr class="my-6">
@@ -160,7 +159,7 @@
               <h6>Enter your email</h6>
 
               <div class="input-group mb-3">
-                <input type="email" required class="form-control">
+                <input type="email" required class="form-control" placeholder="Email" [(ngModel)]="email">
               </div>
 
 
