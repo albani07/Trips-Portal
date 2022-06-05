@@ -2,7 +2,7 @@
 /* mobile*/
 body {
   background-color: white;
-  padding: 0;
+  padding: -50px;
   margin: 0;
 }
 
@@ -13,4 +13,5 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
 /*# sourceMappingURL=home-content.component.css.map */
