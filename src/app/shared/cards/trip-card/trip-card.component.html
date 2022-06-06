@@ -1,9 +1,10 @@
 <!-- <div class="box mb-3 text-center" style="width: 15rem;"> -->
-<img src="../../assets/images/image1.jpg" alt="cinque terre">
+<img src="{{ trip?.imageUrl }}" alt="cinque terre">
 <div class="content">
-    <h4> <i class="fas fa-map-marker-alt"></i>{{ trip.destinationName }}</h4>
-    <p> Ready for your next adventure?</p>
-    <div class="price"> 6.500L</div>
-    <button class="button-87" role="button">VIEW DETAILS</button>
+    <div class="title"><b>{{ trip.destinationName }}</b></div>
+    <h4><i>{{ trip?.shortDescription }}</i></h4>
+    <!-- <p> Ready for your next adventure?</p> -->
+    <div class="price"> <span>{{trip.price | currency : "€"}}</span></div>
+    <button class="button-51" role="button">VIEW DETAILS</button>
 </div>
 <!-- </div> -->
