@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+
+import { ContactComponent } from './pages/contact/contact.component';
+  // { path: 'trips/:id', component: SingleTripComponent },
 // import { ExampleComponent } from './example/example.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
@@ -19,6 +23,7 @@ const routes: Routes = [
   { path: 'trips', component: TripsComponent },
   { path: 'join-our-team', component: JoinOurTeamComponent },
   { path: 'trips/:id', component: SingleTripComponent },
+  { path: 'contact-us', component: ContactComponent },
 ];
 
 @NgModule({
