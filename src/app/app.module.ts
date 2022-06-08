@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
+
 // import { ExampleComponent } from './example/example.component';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
 import { TripsComponent } from './pages/trips/trips.component';
@@ -19,6 +20,7 @@ import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.compon
 import { TripCardComponent } from './shared/cards/trip-card/trip-card.component';
 import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     // ExampleComponent,
     HomeContentComponent,
     TripsComponent,
+    ContactComponent,
     NavbarComponent,
     // HomeComponent,
     LoginComponent,
