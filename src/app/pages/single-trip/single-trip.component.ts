@@ -8,7 +8,9 @@ import { Trip } from 'src/app/interfaces/trip';
 })
 export class SingleTripComponent implements OnInit {
   @Input() trip!: Trip;
-
+  alert() {
+    window.alert('Submitted succesfully!');
+  }
   constructor() {
     // this.imagePath1 = '../../assets/images/single-trip-pictures/theth1.jpg';
     // this.imagePath2 = '../../assets/images/single-trip-pictures/theth2.jpg';

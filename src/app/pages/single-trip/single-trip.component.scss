@@ -47,7 +47,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+label {
   font-family: "Playfair Display", serif;
 }
 
@@ -74,4 +75,28 @@ span {
 
 .book-now {
   background-color: 2094e6;
+}
+
+.accordion-button {
+  background-color: #a6c9f1bf;
+}
+
+.gallery {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0px;
+}
+
+.footerPhoto {
+  background-image: url("/assets/images/single-trip-pictures/blue.jpg");
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  max-width: 100%;
+  align-items: flex-end;
+  padding: 10.25rem 0;
+  background-position: center;
+}
+
+.button-footer {
+  padding-left: 80px;
 }
