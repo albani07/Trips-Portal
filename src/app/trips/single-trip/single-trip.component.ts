@@ -1,9 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  NgbDateStruct,
-  NgbCalendar,
-  NgbInputDatepicker,
-} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-single-trip',
@@ -30,5 +25,5 @@ export class SingleTripComponent implements OnInit {
     // this.oiaImg = '../../assets/images/oia.jpg';
     // this.quadImg = '../../assets/images/fira.jpg';
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
