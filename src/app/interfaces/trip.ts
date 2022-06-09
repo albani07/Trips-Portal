@@ -3,7 +3,7 @@ export interface Trip {
     destinationName: string,
     price: number,
     imageUrl: string,
-    // shortDescription: string,
+    shortDescription: string,
     // dificulty: string,
     // activity: string,
     // rating: Array<Rating>,
