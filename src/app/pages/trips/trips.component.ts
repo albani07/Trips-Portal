@@ -24,7 +24,7 @@ export class TripsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  filterTrips(): void {
+  filterTrips(): any {
     this.trips = this.tripService.filter(this.filters);
   }
 
