@@ -1,0 +1,31 @@
+/* tablet*/
+@media screen and (max-width: 768px) {}
+
+/* mobile*/
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+// .beach {
+//     width: 100px;
+// }
+
+// .berat {
+//     width: 100px;
+// }
+
+// .sarande {
+//     width: 100px;
+// }
+
+// .theth {
+//     width: 100px;
+// }
+
+.home-images {
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+}
