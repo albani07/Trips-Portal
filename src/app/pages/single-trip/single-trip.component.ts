@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Trip } from 'src/app/interfaces/trip';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-single-trip',
@@ -8,17 +9,26 @@ import { Trip } from 'src/app/interfaces/trip';
 })
 export class SingleTripComponent implements OnInit {
   @Input() trip!: Trip;
+
   alert() {
     window.alert('Submitted succesfully!');
   }
-  constructor() {
-    // this.imagePath1 = '../../assets/images/single-trip-pictures/theth1.jpg';
-    // this.imagePath2 = '../../assets/images/single-trip-pictures/theth2.jpg';
-    // this.imagePath3 = '../../assets/images/single-trip-pictures/theth3.jpg';
-    // this.imagePath4 = '../../assets/images/single-trip-pictures/theth4.jpg';
-    // this.locationIcon = '../../assets/images/single-trip-pictures/location.png';
-    // // this.oiaImg = '../../assets/images/oia.jpg';
-    // // this.quadImg = '../../assets/images/fira.jpg';
+
+  public tripId: number | undefined;
+  public tripDestination: number | undefined;
+  public tripPrice: number | undefined;
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    let id = parseInt(this.route.snapshot.paramMap.get('id') || '{}');
+    this.tripId = id;
+
+    let destination = parseInt(
+      this.route.snapshot.paramMap.get('destinationName') || '{}'
+    );
+    this.tripDestination = destination;
+
+    // let price = parseInt(this.route.snapshot.paramMap.get('price') || '{}');
+    // this.tripPrice = price;
   }
-  ngOnInit(): void {}
 }

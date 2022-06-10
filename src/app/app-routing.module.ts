@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 import { ContactComponent } from './pages/contact/contact.component';
-  // { path: 'trips/:id', component: SingleTripComponent },
+// { path: 'trips/:id', component: SingleTripComponent },
 // import { ExampleComponent } from './example/example.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
@@ -31,3 +30,13 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
+export const routingComponents = [
+  HomeContentComponent,
+  LoginComponent,
+  SignupComponent,
+  NavbarComponent,
+  TripsComponent,
+  JoinOurTeamComponent,
+  SingleTripComponent,
+];
