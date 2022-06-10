@@ -10,18 +10,27 @@ body {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   bottom: 0;
-  //   background: linear-gradient(to right, #669f68, #012b14);
   background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  background-image: linear-gradient(
+    to right,
+    #142030,
+    #02222d,
+    #002323,
+    #0c2217,
+    #1a200c
+  );
 
   color: #fff;
   padding: 100px 0 30px;
   border-top-left-radius: 125px;
   font-size: 13px;
   line-height: 20px;
+  display: inline;
+  margin: 0;
+  overflow: hidden;
 }
 
 .row {
@@ -106,17 +115,30 @@ form button .fas {
   color: #ccc;
 }
 
-.social-icons .fab {
+.fa-brands {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  line-height: 30px;
+  margin: 0 10px;
   text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  color: #000;
-  background: white;
-  margin-right: 15px;
   cursor: pointer;
+  border-radius: none;
+  border: none;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.fa-brands:hover {
+  opacity: 0.7;
+  color: greenyellow;
+}
+.fa-solid:hover {
+  opacity: 0.7;
+  color: greenyellow;
+}
+
+.social-icons {
+  font-size: 2em;
 }
 
 hr {
