@@ -1,14 +1,17 @@
-<div class="container">
+<div class="home-cover">
 
-    <!--adding some images on the home-->
-    <div class="home-images">
-
-        <!-- <img src="assets/images/home-pictures/beach.jpg" class="rounded float-start" alt="beach"> -->
-        <img src="assets/images/home-pictures/berat.jpg" class="img-fluid" alt="berat">
-        <!-- <img src="assets/images/home-pictures/saranda.jpg" class="rounded mx-auto d-block" alt="saranda">
+    <!-- <img src="assets/images/home-pictures/beach.jpg" class="rounded float-start" alt="beach"> -->
+    <video autoplay loop>
+        <source src="assets/video/Visit_Albania.mp4" type="video/mp4">
+    </video>
+    <!-- <img src="assets/images/home-pictures/saranda.jpg" class="rounded mx-auto d-block" alt="saranda">
         <img src="assets/images/home-pictures/theth.jpg" class="rounded float-end " alt="theth"> -->
 
-    </div>
+</div>
+<div class="container home-short-description">
+
+    <!--adding some images on the home-->
+
     <!--putting some short description-->
     <div class="description text-center">
         <h1>Explore Albania</h1>
@@ -16,7 +19,7 @@
     </div>
     <br>
     <!--some reasons why to travel with us-->
-    <div class="d-flex justify-content-evenly text-center">
+    <div class="d-flex justify-content-evenly text-center home-cards">
         <div class="short-desc-one">
             <h6>Find the perfect adventure</h6>
             <p>Itineraries are expertly designed, by local guides who know their area best.</p>
@@ -39,7 +42,7 @@
     <!--bringing up some popular trips-->
     <div class="row">
         <h3 class="popular-trips">Popular Trips</h3>
-        <div class="popular-trips-one shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
+        <!-- <div class="popular-trips-one shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/beach.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
@@ -50,9 +53,13 @@
                 </p>
                 <a href="#" class="btn btn-primary">Explore Reviera</a>
             </div>
-        </div>
-        <div class="popular-trips-two shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
-            <img src="assets/images/home-pictures/saranda.jpg" class="card-img-top rounded" alt="...">
+        </div> -->
+        <div class="row">
+            <trip-card *ngFor="let trip of mostPopular" [trip]="trip" class="box mb-3 text-center"
+                style="width: 15rem;">
+
+            </trip-card>
+            <!-- <img src="assets/images/home-pictures/saranda.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
                 <br>
@@ -61,9 +68,10 @@
                     Albanian Ionian Sea
                     Coast, Saranda has a Mediterranean climate with over 300 sunny days a year.</p>
                 <a href="#" class="btn btn-primary">Explore Saranda</a>
-            </div>
+            </div> -->
+            <hr>
         </div>
-        <div class="popular-trips-three shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
+        <!-- <div class="popular-trips-three shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/theth.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
@@ -75,8 +83,8 @@
                     natural beauty.</p>
                 <a href="#" class="btn btn-primary">Explore Theth</a>
             </div>
-        </div>
-        <div class="popular-trips-four shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
+        </div> -->
+        <!-- <div class="popular-trips-four shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/shengjin.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
@@ -87,12 +95,15 @@
                 <a href="#" class="btn btn-primary">Explore Shengjin</a>
             </div>
         </div>
-    </div>
-    <hr>
-    <!--bringing up some upcoming tours-->
-    <div class="row">
-        <h3 class="upcoming-trips">Upcoming Trips</h3>
-        <div class="upcoming-trips-one shadow-lg p-0 mb-5 bg-body rounded " style="width: 18rem;">
+    </div> -->
+
+        <!-- bringing up some upcoming tours -->
+        <div class="row">
+            <h3 class="upcoming-trips">Upcoming Trips</h3>
+            <trip-card *ngFor="let trip of upComing" [trip]="trip" class="box mb-3 text-center" style="width: 15rem;">
+
+            </trip-card>
+            <!-- <div class="upcoming-trips-one shadow-lg p-0 mb-5 bg-body rounded " style="width: 18rem;">
             <img src="assets/images/home-pictures/lezha.jpg" class="card-img-top rounded " alt="...">
             <div class="card-body">
                 <br>
@@ -102,9 +113,10 @@
                     position in terms of its coastal climate. The Adriatic coast is located no more than 8 km. Lezha is
                     well known for its castle</p>
                 <a href="#" class="btn btn-primary">Explore Lezha</a>
-            </div>
+            </div> -->
+            <hr>
         </div>
-        <div class="upcoming-trips-two shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
+        <!-- <div class="upcoming-trips-two shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/durres.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
@@ -116,8 +128,8 @@
                     the Adriatic Sea.</p>
                 <a href="#" class="btn btn-primary">Explore Durres</a>
             </div>
-        </div>
-        <div class="upcoming-trips-three shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
+        </div> -->
+        <!-- <div class="upcoming-trips-three shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/korca.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
@@ -129,8 +141,8 @@
                     the city.</p>
                 <a href="#" class="btn btn-primary">Explore Korca</a>
             </div>
-        </div>
-        <div class="upcoming-trips-four shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
+        </div> -->
+        <!-- <div class="upcoming-trips-four shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/shkoder.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
                 <br>
@@ -141,7 +153,8 @@
                     Mediterranean climate with continental influences.</p>
                 <a href="#" class="btn btn-primary">Explore Shkodra</a>
             </div>
-        </div>
+        </div> -->
+
     </div>
     <hr>
 

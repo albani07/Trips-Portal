@@ -10,13 +10,14 @@ export class TripService {
       id: '123',
       destinationName: 'Theth',
       price: 150,
+      imageUrl: "assets/images/img1.jpg",
       // shortDescription: string,
       dificulty: 'Easy',
       activity: 'Hiking',
       // rating: Array < Rating >,
       // location: string,
-      // mostPopular: boolean,
-      // upComing: boolean,
+      mostPopular: true,
+      upComing: false,
       // imageCover: string,
       // reccomandations: string,
       // longDiscription: string,
@@ -27,13 +28,14 @@ export class TripService {
       id: '12334',
       destinationName: 'Valbone',
       price: 150,
+      imageUrl: "assets/images/img2.jpg",
       // shortDescription: string,
       dificulty: 'extreme',
       activity: 'Beach',
       // rating: Array < Rating >,
       // location: string,
-      // mostPopular: boolean,
-      // upComing: boolean,
+      mostPopular: true,
+      upComing: true,
       // imageCover: string,
       // reccomandations: string,
       // longDiscription: string,
@@ -43,13 +45,14 @@ export class TripService {
       id: '12334',
       destinationName: 'Pashtrik',
       price: 150,
+      imageUrl: "assets/images/img3.jpg",
       // shortDescription: string,
       dificulty: 'Easy',
       activity: 'Hiking',
       // rating: Array < Rating >,
       // location: string,
-      // mostPopular: boolean,
-      // upComing: true,
+      mostPopular: false,
+      upComing: false,
       // imageCover: string,
       // reccomandations: string,
       // longDiscription: string,
@@ -124,12 +127,13 @@ export class TripService {
       });
   }
 
-  // popular() { 
-  // bussines logic here
-  // return trips.filter(trip => trip.popular == true);
-  // }
+  popular() {
+    return this.trips.filter(trip => trip.mostPopular === true);
+  }
 
-  // upcoming() { // bussines logic here }
+  upcoming() {
+    return this.trips.filter(trip => trip.upComing === true);
+  }
 
   find(id: any) {
     // ToDo: get a single trip from id

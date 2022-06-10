@@ -10,28 +10,29 @@ import { TripService } from 'src/app/services/trip.service';
 export class TripsComponent implements OnInit {
   trips: Trip[];
   tripService: TripService;
-
+  
   filters = {
     date: null, // current date
     destination: null ,// or something special
     activity: null,
     difficulty: null
   }
-
-
-
+  
+  
+  
   constructor(tripService: TripService) {
     this.tripService = tripService;
     this.trips = tripService.all();
   }
-
-
+  
+  
   ngOnInit(): void {
     // this.filters.destination = 'Pashtrik';
   }
 
   filterTrips(): void {
     this.trips = this.tripService.filter(this.filters);
+    
   }
-
+  
 }
