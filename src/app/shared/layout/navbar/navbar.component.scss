@@ -1,0 +1,18 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.form-control {
+  border-radius: 1px;
+  width: 400px;
+  margin-left: 200px;
+  height: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  z-index: 10;
+  right: 50%;
+  top: 20px;
+  color: rgb(243, 243, 247);
+}
