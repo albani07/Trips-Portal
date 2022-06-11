@@ -1,13 +1,18 @@
-<div class="px-5">
-  <div class="row pt-5">
+<div class="row cover-row">
+  <div class="col-12">
+  </div>
+</div>
+<!-- Search Bar title -->
+  <div class="px-5">
+  <div class="row pt-5 sticky-top">
     <h1 class="display-10 text-1000 fw-bold">EXPLORE ALBANIA IN A GLANCE</h1>
   </div>
   <div class="row">
     <div class="col-md-4 h-40">
-      <!-- <div class="col-lg-6 py-5 py-xl-5 py-xl-7"> -->
       <h3 class="display-8 text-primary fw-normal"><i>Discover The Beauty</i></h3>
-      <div class="pt-1">
+      <div class="pt-1 sticky-top">
         <form class="row g-4 mt-5">
+
           <!-- Destination -->
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon">
@@ -19,6 +24,7 @@
               </span>
             </div>
           </div>
+
           <!-- Data -->
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon">
@@ -28,6 +34,7 @@
                 <i class="fas fa-calendar"></i></span>
             </div>
           </div>
+
           <!-- Activites -->
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon"><label class="form-label text-secondary" for="inputActivity">ACTIVITY</label>
@@ -57,9 +64,7 @@
             </div>
           </div>
 
-          <!-- <div class="col-12 col-xxl-10 col-lg-12 d-grid mt-6">
-            <button class="button-59" role="button">SEARCH PACKAGES</button>
-          </div> -->
+          <!-- Button -->
           <a href="#" class="cta">
             <span>SEARCH PACKAGES</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -69,22 +74,16 @@
           </a>
         </form>
       </div>
-      <!-- </div> -->
     </div>
-    <!-- cards here -->
-
+   
+<!-- Cards starts here -->
     <div class="col-md-8">
-
       <section class="packages" id="packages">
         <div class="box-container">
-
           <trip-card *ngFor="let trip of trips" [trip]="trip" class="box mb-3 text-center" style="width: 15rem;">
           </trip-card>
         </div>
-
       </section>
-
     </div>
-
   </div>
 </div>
