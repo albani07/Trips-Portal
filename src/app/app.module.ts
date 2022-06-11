@@ -21,6 +21,8 @@ import { TripCardComponent } from './shared/cards/trip-card/trip-card.component'
 import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FooterComponent } from './shared/layout/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     JoinOurTeamComponent,
     TripCardComponent,
     SingleTripComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     MatButtonModule,
     MatIconModule,
     NgbModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

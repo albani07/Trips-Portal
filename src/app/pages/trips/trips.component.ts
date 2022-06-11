@@ -8,7 +8,7 @@ import { TripService } from 'src/app/services/trip.service';
   styleUrls: ['./trips.component.scss']
 })
 export class TripsComponent implements OnInit {
-  trips: Trip[];
+  trips: any[];
   tripService: TripService;
 
   filters = {

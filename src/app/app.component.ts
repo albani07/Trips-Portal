@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+// import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,5 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'trips-portal';
-  faUser = faUser;
+  // faUser = faUser;
 }

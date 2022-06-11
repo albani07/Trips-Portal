@@ -11,17 +11,15 @@ body {
 
 footer {
   width: 100vw;
-  position: absolute;
+  // position: absolute;
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
   bottom: 0;
   background-color: #3eecac;
-  background-image: linear-gradient(
-    to right,
-    #142030,
-    #02222d,
-    #002323,
-    #0c2217,
-    #1a200c
-  );
+  background-image: linear-gradient
+    (to right, #142030, #02222d, #002323, #0c2217, #1a200c);
 
   color: #fff;
   padding: 100px 0 30px;
@@ -191,4 +189,10 @@ hr {
   .col:nth-child(3) {
     flex-basis: 100%;
   }
+}
+
+.pageName {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: large;
 }
