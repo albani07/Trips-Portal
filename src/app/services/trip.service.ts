@@ -26,6 +26,13 @@ export class TripService extends LocalStorageDataServiceService {
     return this.all().filter((trip: any) => trip.upComing === true);
   }
 
+  // find(id: any) {
+  //   return this.item
+
+  // }
+  // find(id: any): Trip {
+  //   return <Trip>this.trips.find((trip) => trip.id == id);
+  // }
 
 
   initialize(): void {
@@ -623,6 +630,7 @@ export class TripService extends LocalStorageDataServiceService {
   }
 
 }
+
 
 // export class TripService {
 //   trips = [

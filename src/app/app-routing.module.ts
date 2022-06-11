@@ -17,9 +17,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'navbar', component: NavbarComponent },
-  // { path: '', component: HomeContentComponent },
-  // { path: 'example', component: ExampleComponent },
   { path: 'trips', component: TripsComponent },
+  { path: 'trips/:id', component: SingleTripComponent },
   { path: 'join-our-team', component: JoinOurTeamComponent },
   { path: 'single-trip', component: SingleTripComponent },
   { path: 'contact', component: ContactComponent },
@@ -30,7 +29,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
 
 export const routingComponents = [
   HomeContentComponent,
