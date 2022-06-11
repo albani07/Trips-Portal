@@ -26,12 +26,49 @@ export class JoinOurTeamComponent implements OnInit {
   
   constructor() { }
   
-  contactForm ={}
-  name: string=''
-  lastName: string = ''
-  phoneNumber : string = ''
-  email: string = ''
-  
+ team =[{
+   photo: 'img',
+   name: 'Alban Halaj',
+   position: 'Frontend Developer',
+   description: 'Something'
+ },
+ {
+  photo: 'img',
+  name: 'Doris Rapi',
+  position: 'Frontend Developer',
+  description: 'Something'
+},
+{
+  photo: 'img',
+  name: 'Sanja Mulla',
+  position: 'Frontend Developer',
+  description: 'Something'
+},
+{
+  photo: 'img',
+  name: 'Thoma Mimani',
+  position: 'Frontend Developer',
+  description: 'Something'
+},
+{
+  photo: 'img',
+  name: 'Aulona Veshaj',
+  position: 'Frontend Developer',
+  description: 'Something'
+},
+{
+  photo: 'img',
+  name: 'Ermina Zeneli',
+  position: 'Frontend Developer',
+  description: 'Something'
+},
+{
+  photo: 'img',
+  name: 'Petraq Rezhdo',
+  position: 'Frontend Developer',
+  description: 'Something'
+},
+]
   hidden: boolean = false
 
   contact: boolean = false
