@@ -1,4 +1,4 @@
-import { Itinerary } from './itenerary';
+// import { Itinerary } from './itenerary';
 
 export interface Trip {
   id: string;
@@ -16,7 +16,7 @@ export interface Trip {
   // reccomandations: string,
   longDescription1?: string;
   longDescription2?: string;
-  itinerary?: Array<Itinerary>;
+  itinerary?: string[];
   img1?: string;
   img2?: string;
   img3?: string;
@@ -26,8 +26,14 @@ export interface Trip {
 //     results: Array<T>;
 // }
 
-interface Rating {
-  id: string;
-  count: number;
-  title: string;
-}
+// interface Rating {
+//   id: string;
+//   count: number;
+//   title: string;
+// }
+
+// interface Itinerary extends Trip {
+//   dayOne: string;
+//   dayTwo: string;
+//   dayThree: string;
+// }

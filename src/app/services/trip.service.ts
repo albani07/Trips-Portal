@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Trip } from '../interfaces/trip';
+import { Itinerary } from '../interfaces/itenerary';
 
 @Injectable({
   providedIn: 'root',
@@ -35,9 +36,20 @@ export class TripService {
       recommend to visit Theth Albania anywhere between July to October.
       Around the end of October and the beginning of November the facilities
       in and around Theth close for winter.`,
-      // itinerary: [
-      //   // 'Hike to the blue eye: The water is incredibly blue, clear and cold! It looks extremely tempting to jump in and swim but, think twice! See the Grunas waterfall: This is a short one hour hike from Theth, and therefore a fun and easy thing to do in Theth',
-      // ],
+      itinerary: [
+        `Hike to the blue eye: 
+      The water is incredibly blue, clear and cold! It looks extremely tempting to jump in and swim but, think twice!
+      See the Grunas waterfall:
+      This is a short one hour hike from Theth, and therefore a fun and easy thing to do in Theth!
+      `,
+        `Explore the village and experience the guesthouse: 
+        Depending on your guesthouse, you might have some activities to do. You could feed the farm animals, hang out in the community area with a cozy fireplace, eat traditional Albanian foods and interact with other travelers!
+        `,
+        `Hike from Theth to Valbona
+        This is such an iconic hike! You hike from the village of Theth to the village of Valbona, which is about an 8 hour hike in total.
+        Several websites suggest that this hike is easy to intermediate, but we don’t think so. We though this hike was strenuous, because of the elevation (you get out of breath sooner), you walk steep up the mountain for several hours and you walk on loose rocks (difficult to get a grip).
+        `,
+      ],
       img1: '../../assets/images/single-trip-pictures/theth1.jpg',
       img2: '../../assets/images/single-trip-pictures/theth4.jpg',
       img3: '../../assets/images/single-trip-pictures/theth3.jpg',
