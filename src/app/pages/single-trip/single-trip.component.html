@@ -1,7 +1,7 @@
 <!-- Header photo -->
 
 <div class="headerPhoto">
-  <div class="centered">{{ tripId }}</div>
+  <div class="centered">{{ trip.destinationName }}</div>
 </div>
 <br />
 <br />
@@ -49,7 +49,7 @@
           src="../../assets/images/single-trip-pictures/price.png"
           class="icon price"
           alt=""
-        /><span>200</span>
+        /><span>{{ trip.price }}</span>
       </div>
       <br />
     </div>
@@ -57,9 +57,12 @@
   <div class="col-1"></div>
   <div class="col-6">
     <div class="explore">
-      <h1 class="title"><b>Explore Theth with us</b></h1>
+      <h1 class="title">
+        <b>Explore {{ trip.destinationName }} with us</b>
+      </h1>
       <h3><b>Did you know?</b></h3>
-      <p>
+      <p>{{ trip.longDescription1 }}</p>
+      <!-- <p>
         A trip to the Balkans is not complete without visiting the village town
         of Theth in Albania. This is the perfect place to see the pristine
         Albanian Alps, also called, the accursed mountains. This region is
@@ -68,16 +71,19 @@
         of sheep. This area is extremely underrated and we think it’s time to
         shed some light on this area of Albania. Keep on reading to get all the
         information you need for your next trip to Theth, Albania!
-      </p>
+      </p> -->
       <br />
 
-      <h3><b>Best time to visit Theth</b></h3>
-      <p>
+      <h3>
+        <b>Best time to visit {{ trip.destinationName }}</b>
+      </h3>
+      <p>{{ trip.longDescription2 }}</p>
+      <!-- <p>
         There can still be snow around Theth in the month of June! Therefore, we
         recommend to visit Theth Albania anywhere between July to October.
         Around the end of October and the beginning of November the facilities
         in and around Theth close for winter.
-      </p>
+      </p> -->
     </div>
   </div>
 </div>
@@ -197,21 +203,21 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="../../assets/images/single-trip-pictures/theth1.jpg"
+          src="{{ trip.img1 }}"
           class="d-block w-100 h-100 carouselImg"
           alt="..."
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../assets/images/single-trip-pictures/theth4.jpg"
+          src="{{ trip.img2 }}"
           class="d-block w-100 h-100 carouselImg"
           alt="..."
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../assets/images/single-trip-pictures/theth3.jpg"
+          src="{{ trip.img3 }}"
           class="d-block w-100 h-100 carouselImg"
           alt="..."
         />
