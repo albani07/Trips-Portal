@@ -1,0 +1,103 @@
+.headerPhoto {
+  background-image: url("/assets/images/single-trip-pictures/theth3a.jpg");
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  max-width: 100%;
+  align-items: flex-end;
+  padding: 10.25rem 0;
+  background-position: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.864);
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+}
+.generalInfo {
+  display: flex;
+}
+.alert {
+  background-color: 2094e6;
+  color: black;
+}
+.content {
+  padding-left: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.explore {
+  font-size: large;
+  padding: 30px;
+}
+.title {
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+label,
+p {
+  font-family: "Playfair Display", serif;
+}
+
+span {
+  font-size: large;
+}
+
+.icon {
+  width: 30px;
+  padding-right: 7px;
+}
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+.book-now {
+  background-color: 2094e6;
+}
+
+.accordion-button {
+  background-color: #a6c9f1bf;
+}
+
+.gallery {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0px;
+}
+
+.footerPhoto {
+  background-image: url("/assets/images/single-trip-pictures/blue.jpg");
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  max-width: 100%;
+  align-items: flex-end;
+  padding: 10.25rem 0;
+  background-position: center;
+}
+
+.button-footer {
+  padding-left: 80px;
+}

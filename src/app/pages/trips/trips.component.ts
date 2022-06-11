@@ -13,7 +13,9 @@ export class TripsComponent implements OnInit {
 
   filters = {
     date: null, // current date
-    destination: null // or something special
+    destination: null, // or something special
+    activity: null,
+    difficulty: null
   }
 
   constructor(tripService: TripService) {
@@ -24,7 +26,7 @@ export class TripsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  filterTrips(): any {
+  filterTrips(): void {
     this.trips = this.tripService.filter(this.filters);
   }
 

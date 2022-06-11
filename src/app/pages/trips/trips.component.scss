@@ -8,6 +8,7 @@
   
     .box {
       flex: 1 1 30rem;
+      font-family: 'Playfair Display';
       border-radius: .5rem;
       overflow: hidden;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
@@ -22,12 +23,13 @@
 
       .content {
         padding: 1rem;
+        font-family: 'Playfair Display';
       }
     }
   }
 }
-// h4 title
-.packages .box-container .box .content h4 {
+// h3 title
+.packages .box-container .box .content h3 {
   font-size: 1.5rem;
   font-family: 'Playfair Display';
   color: rgb(53, 108, 203);
@@ -36,12 +38,14 @@
 // paragraph
 .packages .box-container .box .content p {
   font-size: 1rem;
+  font-family: 'Playfair Display';
   color: rgb(148, 182, 241);
 }
 
 // price
 .packages .box-container .box .content .price {
   font-size: 1.5rem;
+  font-family: 'Playfair Display';
   color: rgb(14, 66, 22);
 }
 
@@ -55,6 +59,7 @@ body{
   
 a{
   text-decoration: none;
+  font-family: 'Playfair Display';
   color: inherit;
 }
 //  starts search packages button here

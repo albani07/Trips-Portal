@@ -18,7 +18,7 @@
             <div class="input-group-icon">
               <label class="form-label text-secondary" for="inputDestination">DESTINATION</label>
               <input class="form-control input-box form-travelportal-control" id="inputDestination" type="text"
-                placeholder="Destination" />
+                placeholder="Destination" [(ngModel)]="filters.destination"  [value]="filters.destination" name="destination" />
               <span class="nav-link-icon text-800 fs--1 input-box-icon">
                 <i class="fas fa-map-marker-alt"> </i>
               </span>
@@ -38,7 +38,7 @@
           <!-- Activites -->
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon"><label class="form-label text-secondary" for="inputActivity">ACTIVITY</label>
-              <select class="form-select form-travelportal-select input-box" id="inputActivity">
+              <select class="form-select form-travelportal-select input-box" id="inputActivity" [(ngModel)]="filters.activity" name="filters.activity">
                 <option selected="">Select</option>
                 <option>Hiking</option>
                 <option>Sightseeing</option>
@@ -52,12 +52,12 @@
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon">
               <label class="form-label text-secondary" for="inputDifficulty">DIFFICULTY</label>
-              <select class="form-select form-travelportal-select input-box" id="inputDifficulty">
+              <select class="form-select form-travelportal-select input-box" id="inputDifficulty" [(ngModel)]="filters.difficulty" [value]="filters.difficulty" name="filters.difficulty">
                 <option selected="">Select</option>
                 <option>Easy</option>
                 <option>Moderate</option>
                 <option>Tough</option>
-                <option>extreme</option>
+                <option>Extreme</option>
               </select>
               <span class="nav-link-icon text-800 fs--1 input-box-icon">
                 <i class="fas fa-user"> </i></span>
@@ -65,7 +65,7 @@
           </div>
 
           <!-- Button -->
-          <a href="#" class="cta">
+          <a class="cta" (click)="filterTrips()">        >
             <span>SEARCH PACKAGES</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>

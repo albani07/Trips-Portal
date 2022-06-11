@@ -1,12 +1,14 @@
 .packages {
   .box-container {
     display: grid;
+    font-family: 'Playfair Display';
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
     padding: 10px;
 
     .box {
       flex:1 1 30rem;
+      font-family: 'Playfair Display';
       border-radius: .5rem;
       overflow: hidden;
       box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
@@ -20,19 +22,21 @@
 
       .content {
         padding: 1rem;
+        font-family: 'Playfair Display';
       }
     }
   }
 }
   
-  .packages .box-container .box .content h4{
+  .packages .box-container .box .content h3{
     font-size:1.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Playfair Display';
     color:rgb(14, 66, 22);
   }
 
   .packages .box-container .box .content p{
     font-size:1rem;
+    font-family: 'Playfair Display';
     color:rgb(65,38,174);
   }
   

@@ -45,7 +45,7 @@
 <div class="mb-4 mt-4">
   <h2 class="th-title">Email Us</h2>
 </div>
-<form>
+<form onsubmit="sendEmail(); reset(); return false;">
     <div class="form-group">
       <label for="exampleInputEmail1">Email address*</label>
       <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email">
@@ -71,3 +71,23 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+<!-- example from youtube to be functional: EMAIL -->
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail() {
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "sanjamulla03@gmail.com",
+    Password : "password",
+    To : 'sanjamulla21@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Phone no: " + document.getElementById("phone").value
+    + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+  }
+</script> -->
