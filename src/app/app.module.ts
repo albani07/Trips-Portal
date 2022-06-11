@@ -18,7 +18,7 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
 import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
 import { TripCardComponent } from './shared/cards/trip-card/trip-card.component';
-import { SingleTripComponent } from './trips/single-trip/single-trip.component';
+import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-trip-card.component';
@@ -52,4 +52,4 @@ import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

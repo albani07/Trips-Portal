@@ -4,7 +4,7 @@ import { LocalStorageDataServiceService } from './local-storage-data-service.ser
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 
 export class TripService extends LocalStorageDataServiceService {
@@ -84,59 +84,101 @@ export class TripService extends LocalStorageDataServiceService {
       //   // longDiscription: string,
       //   // itinerary: Array < Itinerary >
       // },
-
       {
-        id: '114',
-        destinationName: 'Dardhe',
-        price: 60,
-        shortDescription: "This famous village is one of the main destinations to visit.",
-        imageUrl: 'assets/images/cardsimg/dardhe.jpg',
+        id: '111',
+        destinationName: 'Theth',
+        price: 150,
+        imageUrl: 'assets/images/img1.jpg',
+        // shortDescription: string,
         // dificulty: string,
-        // activity: string,
+        activity: 'Hike',
         // rating: Array < Rating >,
         // location: string,
         mostPopular: true,
-        // upComing: boolean,
+        upComing: false,
         // imageCover: string,
         // reccomandations: string,
-        // longDiscription: string,
-        // itinerary: Array < Itinerary >
+        longDescription1: `
+        A trip to the Balkans is not complete without visiting the village town
+        of Theth in Albania. This is the perfect place to see the pristine
+        Albanian Alps, also called, the accursed mountains. This region is
+        called the ‘Albanian Alps’ for a reason, as you can expect to see sky
+        high peaks and clear blue mountain water, idyllic stone houses and herds
+        of sheep. This area is extremely underrated and we think it’s time to
+        shed some light on this area of Albania. Keep on reading to get all the
+        information you need for your next trip to Theth, Albania!
+     
+      `,
+        longDescription2: `There can still be snow around Theth in the month of June! Therefore, we
+      recommend to visit Theth Albania anywhere between July to October.
+      Around the end of October and the beginning of November the facilities
+      in and around Theth close for winter.`,
+        // itinerary: [
+        //   // 'Hike to the blue eye: The water is incredibly blue, clear and cold! It looks extremely tempting to jump in and swim but, think twice! See the Grunas waterfall: This is a short one hour hike from Theth, and therefore a fun and easy thing to do in Theth',
+        // ],
+        img1: '../../assets/images/single-trip-pictures/theth1.jpg',
+        img2: '../../assets/images/single-trip-pictures/theth4.jpg',
+        img3: '../../assets/images/single-trip-pictures/theth3.jpg',
       },
+
 
       {
         id: '115',
         destinationName: 'Korce',
         price: 35,
-        shortDescription: "Korçë is often thought of as one of Albania's most beautiful cities.",
+        shortDescription:
+          "Korçë is often thought of as one of Albania's most beautiful cities.",
         imageUrl: 'assets/images/cardsimg/korce.jpg',
         // dificulty: string,
-        // activity: string,
-        // rating: Array < Rating >,
-        // location: string,
-        // mostPopular: boolean,
-        // upComing: true,
-        // imageCover: string,
-        // reccomandations: string,
-        // longDiscription: string,
-        // itinerary: Array < Itinerary >
-      },
-
-      {
-        id: '116',
-        destinationName: 'Shkoder',
-        price: 40,
-        shortDescription: "Plenty of things to do that make it a worthy stopping point.",
-        imageUrl: 'assets/images/cardsimg/shkoder.jpg',
-        // dificulty: string,
-        // activity: string,
+        activity: 'Cultural and Relax',
         // rating: Array < Rating >,
         // location: string,
         // mostPopular: boolean,
         // upComing: boolean,
         // imageCover: string,
         // reccomandations: string,
-        // longDiscription: string,
+        longDescription1: `The country’s eighth-largest city by population, Korçë (pronounced ‘kor-cha’) has a history that dates back to the 13th century. It’s known for its role in Albanian culture and intellectual heritage (most famously for being home to the first Albanian language school), world-class museums, beautiful old churches, and pretty architecture.
+
+      It gets its rather idyllic nickname, ‘The City of Serenades’, from the love ballads men used to belt out from the balconies and courtyards of their enigmatic European villas. Sadly, the sounds of guitar and mandolin don’t fill the streets of Korca like they did in the 1930s – but the town still has the same charm and a feeling of nostalgia.
+      `,
+        longDescription2: `Korca is an all-season destination with relatively mild weather year-round. Winter brings cold overnight temperatures and snow; while the warmer months see the town come alive with festivals and special events.
+      If you’re travelling Albania in the off season, it’s a great addition to your schedule.
+      In April, Korca hosts a two-week-long Spring Fair with outdoor markets and parades. In June, there’s Carnival, in July the Lakror Fest (celebrating the city’s favourite pie and its culinary traditions), in August the Beer Fest, and in October the Apple Fest.
+      Whenever you decide to visit, there’s a good chance there will be a special event taking place.
+      `,
         // itinerary: Array < Itinerary >
+        img1: '../../assets/images/single-trip-pictures/korca1.jpg',
+        img2: '../../assets/images/single-trip-pictures/korca2.jpg',
+        img3: '../../assets/images/single-trip-pictures/korca3.jpg',
+      },
+
+      {
+        id: '120',
+        destinationName: 'Berat',
+        price: 40,
+        shortDescription:
+          'The pride of Albanian architecture under the protection of UNESCO.',
+        imageUrl: 'assets/images/cardsimg/berat.jpg',
+        //   // dificulty: string,
+        activity: 'Cultural and Relax',
+        //   // rating: Array < Rating >,
+        //   // location: string,
+        //   // mostPopular: boolean,
+        //   // upComing: boolean,
+        //   // imageCover: string,
+        //   // reccomandations: string,
+        longDescription1: `Berat in central Albania is an elegant stone-and-alabaster city wreathed in fig trees and cleaved by the Osumi river.
+
+      An ancient Illyrian settlement turned Byzantine frontier town, Berat is known for the Ottoman houses that cascade down both sides of its gentle river valley. Evenly spaced portals cut into the stone facades lend it the famous epithet: ‘The City of a Thousand Windows’.
+      `,
+        longDescription2: `Berat is home to one of two UNESCO-listed historic centres (the other being in Gjirokaster), making it a must-see in Albania for history buffs and culture lovers alike.
+
+      Between the unusual Berat Kala and the medieval bazaar, historic mosques, local cuisine, a lively cafe scene and one of the handsomest Ethnographic Museums in the Balkans, Berat has a lot to offer. Not to mention the spectacular valleys, canyons and wineries within easy reach of the city. There are so many reasons to add a few days in Berat to your Albania itinerary.
+      `,
+        img1: '../../assets/images/single-trip-pictures/berat1.jpg',
+        img2: '../../assets/images/single-trip-pictures/berat2.jpg',
+        img3: '../../assets/images/single-trip-pictures/berat3.jpg',
+        //   // itinerary: Array < Itinerary >
       },
 
       {
