@@ -1,7 +1,7 @@
 export interface Trip {
-  id?: string;
-  destinationName?: string;
-  price?: number;
+  id: string;
+  destinationName: string;
+  price: number;
   imageUrl?: string;
   shortDescription?: string;
   // dificulty: string,

@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Trip } from 'src/app/interfaces/trip';
 import { ActivatedRoute } from '@angular/router';
+import { TripService } from 'src/app/services/trip.service';
 
 @Component({
   selector: 'app-single-trip',
@@ -8,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./single-trip.component.scss'],
 })
 export class SingleTripComponent implements OnInit {
-  @Input() trip!: Trip;
+  trip: any;
 
   alert() {
     window.alert('Submitted succesfully!');
@@ -17,11 +18,16 @@ export class SingleTripComponent implements OnInit {
   public tripId: number | undefined;
   public tripDestination: number | undefined;
   public tripPrice: number | undefined;
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private tripService: TripService
+  ) {}
 
   ngOnInit(): void {
     let id = parseInt(this.route.snapshot.paramMap.get('id') || '{}');
     this.tripId = id;
+
+    this.trip = this.tripService.find(this.tripId);
 
     let destination = parseInt(
       this.route.snapshot.paramMap.get('destinationName') || '{}'

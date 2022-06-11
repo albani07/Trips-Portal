@@ -588,11 +588,8 @@ export class TripService {
     return this.trips.filter((trip) => trip.upComing === true);
   }
 
-  find(id: any) {
-    // ToDo: get a single trip from id
-    console.log(id);
-
-    // return single trip
+  find(id: any): Trip {
+    return <Trip>this.trips.find((trip) => trip.id == id);
   }
 
   // create
