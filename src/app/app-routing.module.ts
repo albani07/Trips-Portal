@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { ContactComponent } from './pages/contact/contact.component';
-  // { path: 'trips/:id', component: SingleTripComponent },
+// { path: 'trips/:id', component: SingleTripComponent },
 // import { ExampleComponent } from './example/example.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
@@ -22,8 +22,9 @@ const routes: Routes = [
   // { path: 'example', component: ExampleComponent },
   { path: 'trips', component: TripsComponent },
   { path: 'join-our-team', component: JoinOurTeamComponent },
-  { path: 'trips/:id', component: SingleTripComponent },
-  { path: 'contact-us', component: ContactComponent },
+  { path: 'single-trip', component: SingleTripComponent },
+  { path: 'contact', component: ContactComponent },
+
 ];
 
 @NgModule({

@@ -1,15 +1,15 @@
 export interface Trip {
-    id: string,
-    destinationName: string,
-    price: number,
+    id?: string,
+    destinationName?: string,
+    price?: number,
     imageUrl: string,
-    shortDescription: string,
+    shortDescription?: string,
     // dificulty: string,
     // activity: string,
     // rating: Array<Rating>,
     // location: string,
-    mostPopular: boolean,
-    upComing: boolean,
+    mostPopular?: boolean,
+    upComing?: boolean,
     // imageCover: string,
     // reccomandations: string,
     // longDiscription: string,
@@ -19,17 +19,20 @@ export interface Trip {
 // export interface APIResponese {
 //     results: Array<T>;
 // }
+export type Trips = Array<Trip>;
 
-interface Rating {
-    id: string,
-    count: number,
-    title: string,
+export const TripKey = 'trips';
 
-}
+// interface Rating {
+//     id: string,
+//     count: number,
+//     title: string,
 
-interface Itinerary {
-    dayOne: string,
-    dayTwo: string,
-    dayThree: string,
-    dayFour: string,
-}
+// }
+
+// interface Itinerary {
+//     dayOne: string,
+//     dayTwo: string,
+//     dayThree: string,
+//     dayFour: string,
+// }
