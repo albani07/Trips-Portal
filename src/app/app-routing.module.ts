@@ -12,6 +12,7 @@ import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
 import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeContentComponent },
   { path: 'login', component: LoginComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'join-our-team', component: JoinOurTeamComponent },
   { path: 'trips/:id', component: SingleTripComponent },
   { path: 'contact-us', component: ContactComponent },
+  
 ];
 
 @NgModule({
@@ -39,4 +41,5 @@ export const routingComponents = [
   TripsComponent,
   JoinOurTeamComponent,
   SingleTripComponent,
+ 
 ];

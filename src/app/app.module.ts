@@ -38,7 +38,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     JoinOurTeamComponent,
     TripCardComponent,
     SingleTripComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,

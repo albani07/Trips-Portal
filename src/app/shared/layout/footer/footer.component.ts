@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 // import { faLeaf, faEnvelope, faArrowRightFromBracket, faFacebook, faTwitter, faWhatsapp,faInstagram
 //  } from '@fortawesome/angular-fontawesome';
 // import { faLeaf } from '@fortawesome/angular-fontawesome';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @Component({
   selector: 'app-footer',
