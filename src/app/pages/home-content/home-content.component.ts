@@ -8,8 +8,8 @@ import { TripService } from 'src/app/services/trip.service';
   styleUrls: ['./home-content.component.scss']
 })
 export class HomeContentComponent implements OnInit {
-  mostPopular: Trip[];
-  upComing: Trip[];
+  mostPopular: any[];
+  upComing: any[];
   tripService: TripService;
 
   constructor(tripService: TripService) {

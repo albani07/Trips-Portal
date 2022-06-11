@@ -1,44 +1,56 @@
 <div class="home-cover">
 
     <!-- <img src="assets/images/home-pictures/beach.jpg" class="rounded float-start" alt="beach"> -->
-    <video autoplay loop>
+    <video autoplay loop oncanplay="this.muted=true">
         <source src="assets/video/Visit_Albania.mp4" type="video/mp4">
     </video>
     <!-- <img src="assets/images/home-pictures/saranda.jpg" class="rounded mx-auto d-block" alt="saranda">
         <img src="assets/images/home-pictures/theth.jpg" class="rounded float-end " alt="theth"> -->
 
 </div>
-<div class="container home-short-description">
+<div class="container">
 
     <!--adding some images on the home-->
 
     <!--putting some short description-->
-    <div class="description text-center">
-        <h1>Explore Albania</h1>
-        <h2>Trip Portal takes you where few can go!</h2>
+    <div class="description">
+        <p class="explore">Explore Albania</p>
+        <p class="explore-dscp">Trip Portal takes you where few can go!</p>
     </div>
     <br>
+
     <!--some reasons why to travel with us-->
-    <div class="d-flex justify-content-evenly text-center home-cards">
-        <div class="short-desc-one">
-            <h6>Find the perfect adventure</h6>
-            <p>Itineraries are expertly designed, by local guides who know their area best.</p>
+    <div class="row small-cards">
+        <div class="card shadow-lg p-0 mb-5 bg-body rounded" style="width: 20rem;">
+            <div class="card-body short-desc-one ">
+                <p class="card-title">Find the perfect adventure</p>
+                <p class="card-text">Itineraries are expertly designed, by local guides who know their area best.</p>
+            </div>
         </div>
-        <div class="short-desc-two">
-            <h6>Book with confidence</h6>
-            <p>We pick the very best guides (we're qualified mountain guides ourselves). Payments are 100% protected by
-                Trust My
-                Travel.</p>
+
+        <div class="card shadow-lg p-0 mb-5 bg-body rounded " style="width: 20rem;">
+            <div class="card-body">
+                <p class="card-title">Book with confidence</p>
+                <p class="card-text">We pick the very best guides (we're qualified mountain guides ourselves). Payments
+                    are 100% protected by
+                    Trust My
+                    Travel.</p>
+            </div>
         </div>
-        <div class="short-desc-three">
-            <h6>Feel good</h6>
-            <p>We make sure as much of your payment as possible goes directly to the local guides. It also makes your
-                trip
-                more
-                affordable!</p>
+        <div class="card shadow-lg p-0 mb-5 bg-body rounded" style="width: 20rem;">
+            <div class="card-body">
+                <p class="card-title">Feel good</p>
+                <p class="card-text">We make sure as much of your payment as possible goes directly to the local guides.
+                    It also makes your
+                    trip
+                    more
+                    affordable!</p>
+            </div>
         </div>
     </div>
-    <hr>
+
+
+
     <!--bringing up some popular trips-->
     <div class="row">
         <h3 class="popular-trips">Popular Trips</h3>
@@ -69,7 +81,7 @@
                     Coast, Saranda has a Mediterranean climate with over 300 sunny days a year.</p>
                 <a href="#" class="btn btn-primary">Explore Saranda</a>
             </div> -->
-            <hr>
+
         </div>
         <!-- <div class="popular-trips-three shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/theth.jpg" class="card-img-top rounded" alt="...">
@@ -98,6 +110,7 @@
     </div> -->
 
         <!-- bringing up some upcoming tours -->
+
         <div class="row">
             <h3 class="upcoming-trips">Upcoming Trips</h3>
             <trip-card *ngFor="let trip of upComing" [trip]="trip" class="box mb-3 text-center" style="width: 15rem;">
@@ -114,7 +127,7 @@
                     well known for its castle</p>
                 <a href="#" class="btn btn-primary">Explore Lezha</a>
             </div> -->
-            <hr>
+
         </div>
         <!-- <div class="upcoming-trips-two shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/durres.jpg" class="card-img-top rounded" alt="...">
@@ -156,6 +169,6 @@
         </div> -->
 
     </div>
-    <hr>
+
 
 </div>

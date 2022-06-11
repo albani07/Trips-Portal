@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 import { ContactComponent } from './pages/contact/contact.component';
-  // { path: 'trips/:id', component: SingleTripComponent },
+// { path: 'trips/:id', component: SingleTripComponent },
 // import { ExampleComponent } from './example/example.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
@@ -12,6 +11,7 @@ import { SignupComponent } from './pages/auth/signup/signup.component';
 import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.component';
 import { SingleTripComponent } from './pages/single-trip/single-trip.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeContentComponent },
@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'join-our-team', component: JoinOurTeamComponent },
   { path: 'trips/:id', component: SingleTripComponent },
   { path: 'contact-us', component: ContactComponent },
+  
 ];
 
 @NgModule({
@@ -31,3 +32,14 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
+export const routingComponents = [
+  HomeContentComponent,
+  LoginComponent,
+  SignupComponent,
+  NavbarComponent,
+  TripsComponent,
+  JoinOurTeamComponent,
+  SingleTripComponent,
+ 
+];
