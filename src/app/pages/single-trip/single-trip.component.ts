@@ -36,4 +36,8 @@ export class SingleTripComponent implements OnInit {
     // let price = parseInt(this.route.snapshot.paramMap.get('price') || '{}');
     // this.tripPrice = price;
   }
+
+  // onBook() { 
+    
+  // }
 }

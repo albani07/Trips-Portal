@@ -15,11 +15,11 @@ export class LocalStorageDataServiceService {
         return JSON.parse(localStorage.getItem(this.key) || '{}');
     }
 
-    filter(id: any) {
-        console.log(id);
-        return this.all().find((item: any) => item.id == id);
+    // filter(id: any) {
+    //     console.log(id);
+    //     return this.all().find((item: any) => item.id == id);
 
-    }
+    // }
 
 
 
