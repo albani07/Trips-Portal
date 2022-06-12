@@ -17,7 +17,9 @@ export class ContactComponent implements OnInit {
     message: new FormControl(''),
   });
 
-  constructor(private contactService: ContactService) { }
+  constructor(private contactService: ContactService) { 
+    
+  }
 
   
 

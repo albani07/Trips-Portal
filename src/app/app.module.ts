@@ -22,8 +22,8 @@ import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-trip-card.component';
-import { ReactiveFormsModule  } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [
@@ -49,9 +49,10 @@ import { ReactiveFormsModule  } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     NgbModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
