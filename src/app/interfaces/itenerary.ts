@@ -1,6 +1,8 @@
 export interface Itinerary {
-  dayOne: string;
-  dayTwo: string;
-  dayThree: string;
-  dayFour: string;
+  title: string;
+  description: string;
 }
+
+export type Itineraries = Array<Itinerary>;
+
+export const ItineraryKey = 'itineraries';

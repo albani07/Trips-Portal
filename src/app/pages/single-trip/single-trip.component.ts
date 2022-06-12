@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Trip } from 'src/app/interfaces/trip';
 import { ActivatedRoute } from '@angular/router';
+import { BookingService } from 'src/app/services/booking.service';
 import { TripService } from 'src/app/services/trip.service';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-single-trip',
@@ -10,17 +11,23 @@ import { TripService } from 'src/app/services/trip.service';
 })
 export class SingleTripComponent implements OnInit {
   trip: any;
-
-  alert() {
-    window.alert('Submitted succesfully!');
-  }
+  bookingForm = new FormGroup({
+    startDate: new FormControl(''),
+    endDate: new FormControl(''),
+    adults: new FormControl(''),
+    children: new FormControl(''),
+    email: new FormControl(''),
+    phone: new FormControl(''),
+  });
 
   public tripId: number | undefined;
   public tripDestination: number | undefined;
   public tripPrice: number | undefined;
+
   constructor(
     private route: ActivatedRoute,
-    private tripService: TripService
+    private tripService: TripService,
+    private bookingService: BookingService
   ) {}
 
   ngOnInit(): void {
@@ -28,13 +35,15 @@ export class SingleTripComponent implements OnInit {
     this.tripId = id;
 
     this.trip = this.tripService.find(this.tripId);
+  }
 
-    let destination = parseInt(
-      this.route.snapshot.paramMap.get('destinationName') || '{}'
-    );
-    this.tripDestination = destination;
+  alert() {
+    // window.alert('Submitted succesfully!');
+  }
 
-    // let price = parseInt(this.route.snapshot.paramMap.get('price') || '{}');
-    // this.tripPrice = price;
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.bookingForm.value);
+    this.bookingService.create(this.bookingForm.value);
   }
 }
