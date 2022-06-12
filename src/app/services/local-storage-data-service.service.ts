@@ -2,90 +2,83 @@ import { Injectable } from '@angular/core';
 import { TripKey } from '../interfaces/trip';
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root',
 })
 export class LocalStorageDataServiceService {
-    key: string = '';
+  key: string = '';
 
-    constructor() { }
+  constructor() {}
 
-    all() {
-        // ToDo: get all trips from localStorage
+  all() {
+    // ToDo: get all trips from localStorage
 
-        return JSON.parse(localStorage.getItem(this.key) || '{}');
-    }
+    return JSON.parse(localStorage.getItem(this.key) || '[]');
+  }
 
-    filter(id: any) {
-        console.log(id);
-        return this.all().find((item: any) => item.id == id);
+  filter(id: any) {
+    console.log(id);
+    return this.all().find((item: any) => item.id == id);
+  }
 
-    }
+  find(id: any) {
+    // ToDo: get a single trip from id
+    console.log(id);
 
+    return this.all().find((item: any) => item.id == id);
+    // return single trip
+  }
 
+  // create
 
-    find(id: any) {
-        // ToDo: get a single trip from id
-        console.log(id);
+  create(item: any) {
+    let items = this.all();
 
-        return this.all().find((item: any) => item.id == id);
-        // return single trip
-    }
+    items.push(item);
 
-    // create
+    this.set(items);
+  }
 
-    create(item: any) {
-        let items = this.all();
+  // edit
+  edit(id: number) {
+    let items = this.all();
 
-        items.push(item);
+    items.edit(id);
 
-        this.set(items);
-    }
+    this.set(items);
+  }
 
-    // edit
-    edit(id: number) {
-        let items = this.all();
+  // delete
+  delete(id: number) {
+    let items = this.all();
 
-        items.edit(id);
+    items.delete(id);
 
-        this.set(items);
-    }
+    this.set(items);
+  }
 
-
-
-    // delete
-    delete(id: number) {
-        let items = this.all();
-
-        items.delete(id);
-
-        this.set(items);
-    }
-
-    private set(items: any) {
-        localStorage.setItem(this.key, JSON.stringify(items));
-    }
+  private set(items: any) {
+    localStorage.setItem(this.key, JSON.stringify(items));
+  }
 }
 
-    // all() {
-    //     let items = localStorage.getItem(this.key);
+// all() {
+//     let items = localStorage.getItem(this.key);
 
-    //     return JSON.parse(items || '{}');
-    // }
+//     return JSON.parse(items || '{}');
+// }
 
-    // get(id: number) {
-    //     return this.all().find((i: any) => i.id == id);
-    // }
+// get(id: number) {
+//     return this.all().find((i: any) => i.id == id);
+// }
 
-    // create(item: any) {
-    //     let items = this.all();
+// create(item: any) {
+//     let items = this.all();
 
-    //     items.push(item);
+//     items.push(item);
 
-    //     this.set(items);
-    // }
+//     this.set(items);
+// }
 
-    // private set(items: any): void {
-    //     localStorage.setItem(this.key, JSON.stringify(items));
-    // }
-
-
+// private set(items: any): void {
+//     localStorage.setItem(this.key, JSON.stringify(items));
+// }
