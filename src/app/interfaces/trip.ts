@@ -1,26 +1,25 @@
-import { Itinerary } from './itenerary';
+// import { Itinerary } from './itenerary';
 
 export interface Trip {
-    difficulty: any;
-    id: string;
-    destinationName: string;
-    price: number;
-    imageUrl?: string;
-    shortDescription?: string;
-    // dificulty: string,
-    activity?: string;
-    // rating: Array<Rating>,
-    // location: string,
-    mostPopular?: boolean;
-    upComing?: boolean;
-    // imageCover: string,
-    // reccomandations: string,
-    longDescription1?: string;
-    longDescription2?: string;
-    itinerary?: Array<Itinerary>;
-    img1?: string;
-    img2?: string;
-    img3?: string;
+  id: string;
+  destinationName: string;
+  price: number;
+  imageUrl?: string;
+  shortDescription?: string;
+  // dificulty: string,
+  activity?: string;
+  // rating: Array<Rating>,
+  // location: string,
+  mostPopular?: boolean;
+  upComing?: boolean;
+  // imageCover: string,
+  // reccomandations: string,
+  longDescription1?: string;
+  longDescription2?: string;
+  itinerary?: string[];
+  img1?: string;
+  img2?: string;
+  img3?: string;
 }
 
 // export interface APIResponese {

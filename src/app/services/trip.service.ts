@@ -2,11 +2,9 @@ import { Injectable } from '@angular/core';
 import { TripKey } from '../interfaces/trip';
 import { LocalStorageDataServiceService } from './local-storage-data-service.service';
 
-
 @Injectable({
   providedIn: 'root',
 })
-
 export class TripService extends LocalStorageDataServiceService {
   key: string;
 
@@ -43,10 +41,8 @@ export class TripService extends LocalStorageDataServiceService {
   //   return <Trip>this.trips.find((trip) => trip.id == id);
   // }
 
-
   initialize(): void {
     const trips = [
-
       {
         id: '111',
         destinationName: 'Theth',
@@ -83,7 +79,6 @@ export class TripService extends LocalStorageDataServiceService {
         img2: '../../assets/images/single-trip-pictures/theth4.jpg',
         img3: '../../assets/images/single-trip-pictures/theth3.jpg',
       },
-
 
       {
         id: '115',
@@ -148,7 +143,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '117',
         destinationName: 'Sarande',
         price: 90,
-        shortDescription: "Explore the unofficial capital of the Albanian Riviera.",
+        shortDescription:
+          'Explore the unofficial capital of the Albanian Riviera.',
         imageUrl: 'assets/images/cardsimg/sarande.jpg',
         difficulty: 'Moderate',
         activity: 'Beach',
@@ -166,7 +162,7 @@ export class TripService extends LocalStorageDataServiceService {
         id: '118',
         destinationName: 'Dhermi',
         price: 100,
-        shortDescription: "Sea, nature, typicall village and summer festivals.",
+        shortDescription: 'Sea, nature, typicall village and summer festivals.',
         imageUrl: 'assets/images/cardsimg/dhermi.jpg',
         difficulty: 'Easy',
         activity: 'Beach',
@@ -184,7 +180,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '119',
         destinationName: 'Gjirokaster',
         price: 50,
-        shortDescription: "Visit the City of Stone in ain a dramatic and eye-catching way.",
+        shortDescription:
+          'Visit the City of Stone in ain a dramatic and eye-catching way.',
         imageUrl: 'assets/images/cardsimg/gjirokaster.jpg',
         difficulty: 'Easy',
         activity: 'Sightseeing',
@@ -202,7 +199,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '121',
         destinationName: 'Kruje',
         price: 35,
-        shortDescription: "It offers an open visit to an amazing panoramic view.",
+        shortDescription:
+          'It offers an open visit to an amazing panoramic view.',
         imageUrl: 'assets/images/cardsimg/kruje.jpg',
         difficulty: 'Easy',
         activity: 'Sightseeing',
@@ -220,7 +218,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '122',
         destinationName: 'Pogradec',
         price: 40,
-        shortDescription: "Tradition in hosting family tourism, and for the pleasant fresh climate.",
+        shortDescription:
+          'Tradition in hosting family tourism, and for the pleasant fresh climate.',
         imageUrl: 'assets/images/cardsimg/pogradec.jpg',
         difficulty: 'Easy',
         activity: 'Sightseeing',
@@ -238,7 +237,7 @@ export class TripService extends LocalStorageDataServiceService {
         id: '123',
         destinationName: 'Butrint',
         price: 90,
-        shortDescription: "The Microcosmos of Mediterranean.",
+        shortDescription: 'The Microcosmos of Mediterranean.',
         imageUrl: 'assets/images/cardsimg/butrint.jpg',
         difficulty: 'Moderate',
         activity: 'Sightseeing',
@@ -256,7 +255,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '124',
         destinationName: 'Ksamil',
         price: 100,
-        shortDescription: "The Pearl of Southern Albania, wonderful view and amazing sea.",
+        shortDescription:
+          'The Pearl of Southern Albania, wonderful view and amazing sea.',
         imageUrl: 'assets/images/cardsimg/ksamil.jpg',
         difficulty: 'Moderate',
         activity: 'Beach',
@@ -274,7 +274,7 @@ export class TripService extends LocalStorageDataServiceService {
         id: '125',
         destinationName: 'Tamare',
         price: 60,
-        shortDescription: "Enjoy the picturesque panorama and the fresh food.",
+        shortDescription: 'Enjoy the picturesque panorama and the fresh food.',
         imageUrl: 'assets/images/cardsimg/tamare.jpg',
         difficulty: 'Tough',
         activity: 'Hiking',
@@ -292,7 +292,7 @@ export class TripService extends LocalStorageDataServiceService {
         id: '126',
         destinationName: 'Drimadhe',
         price: 150,
-        shortDescription: "Sea, nature, typicall village and summer festivals.",
+        shortDescription: 'Sea, nature, typicall village and summer festivals.',
         imageUrl: 'assets/images/cardsimg/drimadhe.jpg',
         difficulty: 'Moderate',
         activity: 'Beach',
@@ -310,7 +310,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '127',
         destinationName: 'Lumi i Shales',
         price: 70,
-        shortDescription: "Crystal water and magical nature will make you enjoy every second.",
+        shortDescription:
+          'Crystal water and magical nature will make you enjoy every second.',
         imageUrl: 'assets/images/cardsimg/lumishales.jpg',
         difficulty: 'Tough',
         activity: 'Beach',
@@ -328,7 +329,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '128',
         destinationName: 'Kanionet e Osumit',
         price: 45,
-        shortDescription: "A new experience, with great memories and fun stuff.",
+        shortDescription:
+          'A new experience, with great memories and fun stuff.',
         imageUrl: 'assets/images/cardsimg/kanionetosum.jpg',
         difficulty: 'Tough',
         activity: 'Rafting',
@@ -346,7 +348,7 @@ export class TripService extends LocalStorageDataServiceService {
         id: '129',
         destinationName: 'Jale',
         price: 150,
-        shortDescription: "Sea, nature, typicall village and summer festivals.",
+        shortDescription: 'Sea, nature, typicall village and summer festivals.',
         imageUrl: 'assets/images/cardsimg/jale.jpg',
         difficulty: 'Moderate',
         activity: 'Beach',
@@ -364,7 +366,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '130',
         destinationName: 'Sazan',
         price: 70,
-        shortDescription: "One of the hottest summer destinations and most visited one.",
+        shortDescription:
+          'One of the hottest summer destinations and most visited one.',
         imageUrl: 'assets/images/cardsimg/sazan.jpg',
         difficulty: 'Easy',
         activity: 'Beach',
@@ -382,7 +385,7 @@ export class TripService extends LocalStorageDataServiceService {
         id: '131',
         destinationName: 'Lepushe',
         price: 50,
-        shortDescription: "Lookout to find yourself in the middle of nature.",
+        shortDescription: 'Lookout to find yourself in the middle of nature.',
         imageUrl: 'assets/images/cardsimg/lepushe.jpg',
         difficulty: 'Extreme',
         activity: 'Hiking',
@@ -400,7 +403,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '132',
         destinationName: 'Permet',
         price: 40,
-        shortDescription: "The greenest town in Albania, also known as the city of roses.",
+        shortDescription:
+          'The greenest town in Albania, also known as the city of roses.',
         imageUrl: 'assets/images/cardsimg/permet.jpg',
         difficulty: 'Easy',
         activity: 'Sightseeing',
@@ -418,7 +422,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '133',
         destinationName: 'Vlora',
         price: 70,
-        shortDescription: "Its shores present a unique mixture of rocky and sand beaches.",
+        shortDescription:
+          'Its shores present a unique mixture of rocky and sand beaches.',
         imageUrl: 'assets/images/cardsimg/vlore.jpg',
         difficulty: 'Easy',
         activity: 'Sightseeing',
@@ -436,7 +441,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '134',
         destinationName: 'Durres',
         price: 20,
-        shortDescription: "The city of ancient archaeological sites and findings.",
+        shortDescription:
+          'The city of ancient archaeological sites and findings.',
         imageUrl: 'assets/images/cardsimg/durres.jpg',
         difficulty: 'Easy',
         activity: 'Beach',
@@ -454,7 +460,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '135',
         destinationName: 'Lezhe',
         price: 35,
-        shortDescription: "It is one of  Albania's ancient cities. The Memorial Grave of Skanderbeg.",
+        shortDescription:
+          "It is one of  Albania's ancient cities. The Memorial Grave of Skanderbeg.",
         imageUrl: 'assets/images/cardsimg/lezhe.jpg',
         difficulty: 'Easy',
         activity: 'Sightseeing',
@@ -472,7 +479,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '136',
         destinationName: 'Vermosh',
         price: 60,
-        shortDescription: "A dramatic journey through the spectacular mountainous.",
+        shortDescription:
+          'A dramatic journey through the spectacular mountainous.',
         imageUrl: 'assets/images/cardsimg/vermosh.jpg',
         difficulty: 'Tough',
         activity: 'Hiking',
@@ -490,7 +498,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '137',
         destinationName: 'Razem',
         price: 60,
-        shortDescription: "Offers for you a typical Albanian atmosphere in the heart of the Alps.",
+        shortDescription:
+          'Offers for you a typical Albanian atmosphere in the heart of the Alps.',
         imageUrl: 'assets/images/cardsimg/razem.jpg',
         difficulty: 'Moderate',
         activity: 'Hiking',
@@ -508,7 +517,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '138',
         destinationName: 'Boge',
         price: 70,
-        shortDescription: "The presence of the ski resort attracts many visitors.",
+        shortDescription:
+          'The presence of the ski resort attracts many visitors.',
         imageUrl: 'assets/images/cardsimg/boge.jpg',
         difficulty: 'Moderate',
         activity: 'Hiking',
@@ -526,7 +536,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '139',
         destinationName: 'Himare',
         price: 110,
-        shortDescription: "Find the crystal clear, azure water and soft-sanded in Himare Beach.",
+        shortDescription:
+          'Find the crystal clear, azure water and soft-sanded in Himare Beach.',
         imageUrl: 'assets/images/cardsimg/himare.jpg',
         difficulty: 'Moderate',
         activity: 'Beach',
@@ -544,7 +555,8 @@ export class TripService extends LocalStorageDataServiceService {
         id: '140',
         destinationName: 'Brezovice',
         price: 80,
-        shortDescription: "The presence of the ski resort attracts many visitors.",
+        shortDescription:
+          'The presence of the ski resort attracts many visitors.',
         imageUrl: 'assets/images/cardsimg/brezovice.jpg',
         difficulty: 'Moderate',
         activity: 'Sightseeing',
@@ -557,12 +569,9 @@ export class TripService extends LocalStorageDataServiceService {
         //   // longDiscription: string,
         //   // itinerary: Array < Itinerary >
       },
-
-
     ];
 
     localStorage.setItem(TripKey, JSON.stringify(trips));
-
   }
 
 }

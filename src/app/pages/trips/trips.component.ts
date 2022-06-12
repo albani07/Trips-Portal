@@ -5,10 +5,10 @@ import { TripService } from 'src/app/services/trip.service';
 @Component({
   selector: 'app-trips',
   templateUrl: './trips.component.html',
-  styleUrls: ['./trips.component.scss']
+  styleUrls: ['./trips.component.scss'],
 })
 export class TripsComponent implements OnInit {
-  trips: Trip[];
+  trips: Trip[] = [];
   tripService: TripService;
 
   filters = {
@@ -20,22 +20,13 @@ export class TripsComponent implements OnInit {
 
   constructor(tripService: TripService) {
     this.tripService = tripService;
-    this.trips = tripService.all();
-  }
-
-  ngOnInit(): void {
   }
 
   filterTrips(): void {
     this.trips = this.tripService.filter(this.filters);
   }
-  
-  // filterTrips(filters: any) {
-  // return this.trips.filter(
-  //   trip => {
-  //       return (trip.destinationName.toLowerCase().includes(filters.destination.toLowerCase()) &&
-  //        trip.difficulty==filters.difficulty &&
-  //        trip.activity==filters.activity )
-  //   });
-  // }
+
+  ngOnInit(): void {
+    this.trips = this.tripService.all();
+  }
 }

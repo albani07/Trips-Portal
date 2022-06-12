@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Trip } from 'src/app/interfaces/trip';
 import { ActivatedRoute } from '@angular/router';
 import { TripService } from 'src/app/services/trip.service';
 
@@ -27,7 +26,7 @@ export class SingleTripComponent implements OnInit {
     let id = parseInt(this.route.snapshot.paramMap.get('id') || '{}');
     this.tripId = id;
 
-    this.trip = this.tripService.find(this.tripId);
+    // this.trip = this.tripService.find(this.tripId);
 
     let destination = parseInt(
       this.route.snapshot.paramMap.get('destinationName') || '{}'
