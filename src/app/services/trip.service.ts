@@ -197,25 +197,7 @@ export class TripService extends LocalStorageDataServiceService {
         //   // longDiscription: string,
         //   // itinerary: Array < Itinerary >
       },
-
-      {
-        id: '120',
-        destinationName: 'Berat',
-        price: 40,
-        shortDescription: "The pride of Albanian architecture under the protection of UNESCO.",
-        imageUrl: 'assets/images/cardsimg/berat.jpg',
-        difficulty: 'Easy',
-        activity: 'Sightseeing',
-        //   // rating: Array < Rating >,
-        //   // location: string,
-        //   // mostPopular: boolean,
-        // upComing: true,
-        //   // imageCover: string,
-        //   // reccomandations: string,
-        //   // longDiscription: string,
-        //   // itinerary: Array < Itinerary >
-      },
-
+      
       {
         id: '121',
         destinationName: 'Kruje',
