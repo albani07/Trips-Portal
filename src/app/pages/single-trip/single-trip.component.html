@@ -109,7 +109,7 @@
           aria-expanded="false"
           aria-controls="flush-collapseOne"
         >
-          Day 1
+          <b>Day 1</b>
         </button>
       </h2>
       <div
@@ -133,7 +133,7 @@
           aria-expanded="false"
           aria-controls="flush-collapseTwo"
         >
-          Day 2
+          <b>Day 2</b>
         </button>
       </h2>
       <div
@@ -157,7 +157,7 @@
           aria-expanded="false"
           aria-controls="flush-collapseThree"
         >
-          Day 3
+          <b>Day 3</b>
         </button>
       </h2>
       <div
@@ -175,8 +175,6 @@
 </div>
 <br />
 <br />
-
-<a href="'./single-trip.component.html'"></a>
 
 <!-- Image Gallery -->
 
@@ -237,242 +235,76 @@
 <br />
 <br />
 
-<!-- Button trigger modal -->
-<div class="container">
-  <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModal"
-  >
-    Book now
-  </button>
+<!-- BOOKING -->
 
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Book now</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-
-        <div class="modal-body">
-          <!-- Name & Surname -->
-          <div class="input-group">
-            <span class="input-group-text">First and last name</span>
-            <input type="text" aria-label="First name" class="form-control" />
-            <input type="text" aria-label="Last name" class="form-control" />
-          </div>
-          <br />
-
-          <!-- Start date -->
-          <h3>From:</h3>
-          <div class="input-group">
-            <input
-              id="startDate"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp1"
-              ngbDatepicker
-              #dp1="ngbDatepicker"
-            />
-            <button
-              class="btn btn-outline-secondary calendar"
-              (click)="dp1.toggle()"
-              type="button"
-            ></button>
-          </div>
-          <br />
-
-          <!-- End date -->
-          <h3>To:</h3>
-          <div class="input-group">
-            <input
-              id="endDate"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp"
-              ngbDatepicker
-              #dp="ngbDatepicker"
-            />
-            <button
-              class="btn btn-outline-secondary calendar"
-              (click)="dp.toggle()"
-              type="button"
-            ></button>
-          </div>
-          <br />
-
-          <!-- Number of people in the trip -->
-          <!-- <input type="number" class="input" />
-          <br /> -->
-
-          <!-- Email -->
+<div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="booking-form">
+          <div class="booking-bg"></div>
           <form>
-            <div class="mb-3">
-              <h3 for="exampleInputEmail1" class="form-label">
-                Email address:
-              </h3>
+            <div class="form-header">
+              <h2>Book now</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <span class="form-label">From</span>
+                  <input class="form-control" type="date" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <span class="form-label">To</span>
+                  <input class="form-control" type="date" required />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <span class="form-label">Adults</span>
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <span class="form-label">Children</span>
+                  <select class="form-control">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <span class="form-label">Email</span>
               <input
-                type="email"
                 class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
+                type="email"
+                placeholder="Enter your email"
               />
             </div>
+            <div class="form-group">
+              <span class="form-label">Phone</span>
+              <input
+                class="form-control"
+                type="tel"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="form-btn">
+              <button (click)="alert()" class="submit-btn">Book Now</button>
+            </div>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary" (click)="alert()">
-            Submit
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<br />
-<br />
-
-<div class="footerPhoto">
-  <div class="centered">
-    <!-- Button trigger modal -->
-    <div>
-      <h1 class="footer-text">Explore Albania with us</h1>
-    </div>
-    <div class="button-footer">
-      <button
-        type="button"
-        class="btn btn-light"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Book now
-      </button>
-
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Book now</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="modal-body">
-              <!-- Name & Surname -->
-              <div class="input-group">
-                <span class="input-group-text">First and last name</span>
-                <input
-                  type="text"
-                  aria-label="First name"
-                  class="form-control"
-                />
-                <input
-                  type="text"
-                  aria-label="Last name"
-                  class="form-control"
-                />
-              </div>
-              <br />
-
-              <!-- Start date -->
-              <h3>From:</h3>
-              <div class="input-group">
-                <input
-                  id="startDate"
-                  class="form-control"
-                  placeholder="yyyy-mm-dd"
-                  name="dp1"
-                  ngbDatepicker
-                  #dp1="ngbDatepicker"
-                />
-                <button
-                  class="btn btn-outline-secondary calendar"
-                  (click)="dp1.toggle()"
-                  type="button"
-                ></button>
-              </div>
-              <br />
-
-              <!-- End date -->
-              <h3>To:</h3>
-              <div class="input-group">
-                <input
-                  id="endDate"
-                  class="form-control"
-                  placeholder="yyyy-mm-dd"
-                  name="dp"
-                  ngbDatepicker
-                  #dp="ngbDatepicker"
-                />
-                <button
-                  class="btn btn-outline-secondary calendar"
-                  (click)="dp.toggle()"
-                  type="button"
-                ></button>
-              </div>
-              <br />
-
-              <!-- Email -->
-              <form>
-                <div class="mb-3">
-                  <h3 for="exampleInputEmail1" class="form-label">
-                    Email address:
-                  </h3>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary" (click)="alert()">
-                Submit
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

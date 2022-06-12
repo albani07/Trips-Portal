@@ -25,15 +25,20 @@ export interface Trip {
 // export interface APIResponese {
 //     results: Array<T>;
 // }
+export type Trips = Array<Trip>;
+
+export const TripKey = 'trips';
 
 // interface Rating {
-//   id: string;
-//   count: number;
-//   title: string;
+//     id: string,
+//     count: number,
+//     title: string,
+
 // }
 
-// interface Itinerary extends Trip {
-//   dayOne: string;
-//   dayTwo: string;
-//   dayThree: string;
+// interface Itinerary {
+//     dayOne: string,
+//     dayTwo: string,
+//     dayThree: string,
+//     dayFour: string,
 // }
