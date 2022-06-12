@@ -1,4 +1,4 @@
-
+// starts the box of Search Bar
 .packages {
   .box-container {
     display: grid;
@@ -8,6 +8,7 @@
   
     .box {
       flex: 1 1 30rem;
+      font-family: 'Playfair Display';
       border-radius: .5rem;
       overflow: hidden;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
@@ -22,41 +23,46 @@
 
       .content {
         padding: 1rem;
+        font-family: 'Playfair Display';
       }
     }
   }
 }
-
-.packages .box-container .box .content h4 {
+// h3 title
+.packages .box-container .box .content h3 {
   font-size: 1.5rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Playfair Display';
   color: rgb(53, 108, 203);
 }
 
-
+// paragraph
 .packages .box-container .box .content p {
   font-size: 1rem;
+  font-family: 'Playfair Display';
   color: rgb(148, 182, 241);
 }
 
+// price
 .packages .box-container .box .content .price {
   font-size: 1.5rem;
+  font-family: 'Playfair Display';
   color: rgb(14, 66, 22);
 }
 
 
 body{
   display: grid;
-  font-family: Avenir, sans-serif;
+  font-family: 'Playfair Display';
   color: #111;
 }
   
   
 a{
   text-decoration: none;
+  font-family: 'Playfair Display';
   color: inherit;
 }
- 
+//  starts search packages button here
 .cta{ 
   position: relative;
   margin: auto;
@@ -110,13 +116,13 @@ a{
     transform: scale(0.96);
   }
   
-
+// starts cards button 
 .button-51 {
   background-color: transparent;
   border: 1px solid #266DB6;
   box-sizing: border-box;
   color: #00132C;
-  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-family: 'Playfair Display';
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;

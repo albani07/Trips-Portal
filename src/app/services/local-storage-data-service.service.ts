@@ -15,11 +15,6 @@ export class LocalStorageDataServiceService {
     return JSON.parse(localStorage.getItem(this.key) || '[]');
   }
 
-  filter(id: any) {
-    console.log(id);
-    return this.all().find((item: any) => item.id == id);
-  }
-
   find(id: any) {
     // ToDo: get a single trip from id
     console.log(id);
@@ -60,25 +55,3 @@ export class LocalStorageDataServiceService {
     localStorage.setItem(this.key, JSON.stringify(items));
   }
 }
-
-// all() {
-//     let items = localStorage.getItem(this.key);
-
-//     return JSON.parse(items || '{}');
-// }
-
-// get(id: number) {
-//     return this.all().find((i: any) => i.id == id);
-// }
-
-// create(item: any) {
-//     let items = this.all();
-
-//     items.push(item);
-
-//     this.set(items);
-// }
-
-// private set(items: any): void {
-//     localStorage.setItem(this.key, JSON.stringify(items));
-// }
