@@ -1,17 +1,17 @@
 <div class="px-5">
   <div class="row pt-5">
-    <h3 class="display-10 text-1000 fw-bold">EXPLORE ALBANIA IN A GLANCE</h3>
+    <h1 class="display-10 text-1000 fw-bold">EXPLORE ALBANIA IN A GLANCE</h1>
   </div>
   <div class="row">
     <div class="col-md-4 h-40">
       <!-- <div class="col-lg-6 py-5 py-xl-5 py-xl-7"> -->
-      <h4 class="display-8 text-warning fw-normal">Discover The Beauty</h4>
+      <h3 class="display-8 text-primary fw-normal"><i>Discover The Beauty</i></h3>
       <div class="pt-1">
         <form class="row g-4 mt-5">
           <!-- Destination -->
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon">
-              <label class="form-label visually-hidden" for="inputDestination">Destination</label>
+              <label class="form-label text-secondary" for="inputDestination">DESTINATION</label>
               <input class="form-control input-box form-travelportal-control" id="inputDestination" type="text"
                 placeholder="Destination" [(ngModel)]="filters.destination"  [value]="filters.destination" name="destination"/>
               <span class="nav-link-icon text-800 fs--1 input-box-icon">
@@ -22,16 +22,17 @@
           <!-- Data -->
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon">
-              <input class="form-control input-box form-travelportal-control" id="inputdateOne" type="date" name="filters.date" [(ngModel)]="filters.date" />
+              <label class="form-label text-secondary" for="inputDestination">DATE</label>
+              <input class="form-control input-box form-travelportal-control" id="inputdateOne" type="date" />
               <span class="nav-link-icon text-800 fs--1 input-box-icon">
                 <i class="fas fa-calendar"></i></span>
             </div>
           </div>
           <!-- Activites -->
           <div class="col-sm-6 col-md-6 col-xl-5">
-            <div class="input-group-icon"><label class="form-label visually-hidden" for="inputActivity"></label>
-              <select class="form-select form-travelportal-select input-box" id="inputActivity"  [(ngModel)]="filters.activity" name="filters.activity" >
-                <option selected="" disabled selected hidden>{{filters.activity}}</option>
+            <div class="input-group-icon"><label class="form-label text-secondary" for="inputActivity">ACTIVITY</label>
+              <select class="form-select form-travelportal-select input-box" id="inputActivity">
+                <option selected="">Select</option>
                 <option>Hiking</option>
                 <option>Sightseeing</option>
                 <option>Rafting</option>
@@ -43,10 +44,9 @@
           </div>
           <div class="col-sm-6 col-md-6 col-xl-5">
             <div class="input-group-icon">
-              <label class="form-label visually-hidden" for="inputDifficulty">
-              </label>
-              <select class="form-select form-travelportal-select input-box" id="inputDifficulty" [(ngModel)]="filters.difficulty" name="filters.difficulty">
-                <option selected="" disabled selected hidden>{{filters.difficulty}}</option>
+              <label class="form-label text-secondary" for="inputDifficulty">DIFFICULTY</label>
+              <select class="form-select form-travelportal-select input-box" id="inputDifficulty">
+                <option selected="">Select</option>
                 <option>Easy</option>
                 <option>Moderate</option>
                 <option>Tough</option>
@@ -57,10 +57,16 @@
             </div>
           </div>
 
-          <div class="col-12 col-xxl-10 col-lg-12 d-grid mt-6">
-            <!-- Added click function -->
-            <button (click)="filterTrips()" class="button" role="button">SEARCH PACKAGES</button>
-          </div>
+          <!-- <div class="col-12 col-xxl-10 col-lg-12 d-grid mt-6">
+            <button class="button-59" role="button">SEARCH PACKAGES</button>
+          </div> -->
+          <a href="#" class="cta">
+            <span>SEARCH PACKAGES</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
         </form>
       </div>
       <!-- </div> -->
