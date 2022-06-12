@@ -1,4 +1,4 @@
-import { Itinerary } from './itenerary';
+// import { Itinerary } from './itenerary';
 
 export interface Trip {
   id: string;
@@ -16,7 +16,7 @@ export interface Trip {
   // reccomandations: string,
   longDescription1?: string;
   longDescription2?: string;
-  itinerary?: Array<Itinerary>;
+  itinerary?: string[];
   img1?: string;
   img2?: string;
   img3?: string;
@@ -25,9 +25,20 @@ export interface Trip {
 // export interface APIResponese {
 //     results: Array<T>;
 // }
+export type Trips = Array<Trip>;
 
-interface Rating {
-  id: string;
-  count: number;
-  title: string;
-}
+export const TripKey = 'trips';
+
+// interface Rating {
+//     id: string,
+//     count: number,
+//     title: string,
+
+// }
+
+// interface Itinerary {
+//     dayOne: string,
+//     dayTwo: string,
+//     dayThree: string,
+//     dayFour: string,
+// }

@@ -21,6 +21,8 @@ import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 
+import { ContactComponent } from './pages/contact/contact.component';
+import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-trip-card.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,10 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     JoinOurTeamComponent,
     TripCardComponent,
-    SingleTripComponent
+    SingleTripComponent,
+    SingleTripCardComponent,
+    ContactComponent
+    // LocalStorageDataServiceComponent,
   ],
   imports: [
     BrowserModule,
