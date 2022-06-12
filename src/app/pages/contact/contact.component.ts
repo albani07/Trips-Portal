@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ContactService } from 'src/app/services/contact.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,11 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contactForm = new FormGroup({
+    email: new FormControl(''),
+    name: new FormControl(''),
+    subject: new FormControl(''),
+    message: new FormControl(''),
+  });
+
+  constructor(private contactService: ContactService) { 
+    
+  }
+
+  
 
   ngOnInit(): void {
   }
 
-  
+  onSend(){
+
+    console.warn(this.contactForm.value);
+
+    this.contactService.create(this.contactForm.value);
+  }  
 
 }

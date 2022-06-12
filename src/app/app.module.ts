@@ -24,6 +24,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [
@@ -39,8 +40,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     JoinOurTeamComponent,
     TripCardComponent,
     SingleTripComponent,
-    FooterComponent,
-    
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +54,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
