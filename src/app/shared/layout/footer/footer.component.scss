@@ -5,21 +5,15 @@
   box-sizing: border-box;
 }
 
-// body {
-//   // background: #eef8ff;
-// }
-
 footer {
   width: 100%;
-  // background-color: rgb(10, 9, 9);
-
   background-image: linear-gradient(
     to right top,
-    #1c2736,
-    #00313e,
-    #003938,
-    #0e3f27,
-    #344212
+    #7392c0,
+    #57a4c1,
+    #5eb2b2,
+    #84bb9d,
+    #b1c090
   );
 
   color: #fff;
@@ -191,7 +185,7 @@ hr {
   color: greenyellow;
 }
 
-.fa-solid:hover {
+fa-icon:hover {
   opacity: 0.7;
   color: greenyellow;
 }
@@ -209,7 +203,21 @@ form button .fas {
   color: #ccc;
 }
 
-.fa-brands {
+.secondSpan {
+  background-color: transparent;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  word-spacing: 4px;
+  color: #62f1b1;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+}
+
+fa-icon {
   width: 40px;
   height: 40px;
   line-height: 30px;
@@ -222,16 +230,45 @@ form button .fas {
   transition: all 0.5s ease;
 }
 
-.secondSpan {
-  background-color: transparent;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 22px;
-  letter-spacing: -0.8px;
-  word-spacing: 4px;
-  color: #58af88;
-  font-weight: 400;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: normal;
-  text-transform: none;
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.popup h2 {
+  padding: 5px;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  color: #5eb2b2;
+}
+.popup p {
+  text-align: center;
+  padding-top: 20px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
 }

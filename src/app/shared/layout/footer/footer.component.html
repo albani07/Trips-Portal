@@ -3,7 +3,7 @@
 <footer>
   <div class="row">
     <div class="col">
-      <span><i class="fa-solid fa-leaf" style="font-size: 2em"></i></span>
+      <span style="font-size: 2em"><fa-icon [icon]="faLeaf"></fa-icon></span>
 
       <label>&nbsp;<span></span></label>
       <span class="pageName">Let's Travel Together</span>
@@ -27,7 +27,7 @@
       <p>Let's Travel Together</p>
       <p>Galeria ETC, 12th Floor</p>
       <p>Tirane, AL 1057</p>
-      <p class="email-id">js1@outlook.com</p>
+      <p class="email-id">travelwithus@outlook.com</p>
       <h4>+355 691234567</h4>
     </div>
     <div class="col">
@@ -49,23 +49,27 @@
         <div class="underline"><span></span></div>
       </h3>
       <form>
-        <div>
-          <i class="fa-solid fa-envelope" style="font-size: 2em"></i>
+        <div style="font-size: 2em">
+          <fa-icon [icon]="faEnvelope"></fa-icon>
         </div>
         <input type="email" placeholder="Enter Your Email" required />
-        <button type="submit">
-          <i
-            class="fa-solid fa-arrow-right-from-bracket"
-            style="font-size: 2em; color: white"
-          ></i>
+        <button type="submit" style="font-size: 2em" (click)="sub = !sub">
+          <fa-icon [icon]="faArrowRightFromBracket"></fa-icon>
         </button>
+        <div class="popup_overlay">
+          <div class="popup" id="popup" *ngIf="sub">
+            <!-- <img src="/done-icon.jpg" alt="Done-Icon" /> -->
+            <h2>Thank you!</h2>
+            <p>You have successfully subscribed to the Newsletter. Thanks!</p>
+            <button type="btn" (click)="sub = !sub">Done</button>
+          </div>
+        </div>
       </form>
       <div class="social-icons">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <!-- <i class="fa-brands fa-instagram"></i> -->
-        <i class="bi bi-instagram"></i>
+        <fa-icon [icon]="faFacebook"></fa-icon>
+        <fa-icon [icon]="faTwitter"></fa-icon>
+        <fa-icon [icon]="faWhatsapp"></fa-icon>
+        <fa-icon [icon]="faInstagram"></fa-icon>
       </div>
     </div>
   </div>
