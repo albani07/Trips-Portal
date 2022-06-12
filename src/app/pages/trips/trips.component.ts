@@ -29,5 +29,13 @@ export class TripsComponent implements OnInit {
   filterTrips(): void {
     this.trips = this.tripService.filter(this.filters);
   }
-
+  
+  // filterTrips(filters: any) {
+  // return this.trips.filter(
+  //   trip => {
+  //       return (trip.destinationName.toLowerCase().includes(filters.destination.toLowerCase()) &&
+  //        trip.difficulty==filters.difficulty &&
+  //        trip.activity==filters.activity )
+  //   });
+  // }
 }

@@ -1,6 +1,7 @@
 import { Itinerary } from './itenerary';
 
 export interface Trip {
+    difficulty: any;
     id: string;
     destinationName: string;
     price: number;
