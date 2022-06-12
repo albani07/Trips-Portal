@@ -17,19 +17,19 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'navbar', component: NavbarComponent },
-  // { path: '', component: HomeContentComponent },
-  // { path: 'example', component: ExampleComponent },
   { path: 'trips', component: TripsComponent },
-  { path: 'join-our-team', component: JoinOurTeamComponent },
   { path: 'trips/:id', component: SingleTripComponent },
-  { path: 'contact-us', component: ContactComponent },
+  { path: 'join-our-team', component: JoinOurTeamComponent },
+  { path: 'single-trip', component: SingleTripComponent },
+  { path: 'contact', component: ContactComponent },
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
 
 export const routingComponents = [
   HomeContentComponent,

@@ -17,43 +17,111 @@
         <p class="explore">Explore Albania</p>
         <p class="explore-dscp">Trip Portal takes you where few can go!</p>
     </div>
-    <br>
+    <a class="btn" href="trips"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-search" viewBox="0 0 16 16">
+            <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>Find Your Trip</a>
+</div>
+<br>
 
-    <!--some reasons why to travel with us-->
-    <div class="row small-cards">
+<!--some reasons why to travel with us-->
+<!-- <div class="row small-cards">
+        <div class="headDescription">WE MAKE YOUR DREAM BECOME TRUE</div>
         <div class="card shadow-lg p-0 mb-5 bg-body rounded" style="width: 20rem;">
             <div class="card-body short-desc-one ">
-                <p class="card-title">Find the perfect adventure</p>
-                <p class="card-text">Itineraries are expertly designed, by local guides who know their area best.</p>
+                <p class="card-title ">Find the perfect adventure</p>
+                <p class="card-text">Itineraries are expertly designed, by local guides who know their area best. Our
+                    uniquely curated trips offer you the perfect balance of exploration and relaxation. Join us and see
+                    the world with
+                    other like-minded travellers who will feel like friends from day 1.</p>
             </div>
         </div>
 
         <div class="card shadow-lg p-0 mb-5 bg-body rounded " style="width: 20rem;">
             <div class="card-body">
                 <p class="card-title">Book with confidence</p>
-                <p class="card-text">We pick the very best guides (we're qualified mountain guides ourselves). Payments
-                    are 100% protected by
-                    Trust My
-                    Travel.</p>
+                <p class="card-text">We pick the very best guidess. Payments
+                    are 100% protected by Trust My Travel. When booking with us, you’ll benefit from a low refundable
+                    deposit payment option, our Covid Booking Guarantee, flexible
+                    cancellation options and personal Customer Support. T&Cs apply.</p>
             </div>
         </div>
         <div class="card shadow-lg p-0 mb-5 bg-body rounded" style="width: 20rem;">
             <div class="card-body">
                 <p class="card-title">Feel good</p>
-                <p class="card-text">We make sure as much of your payment as possible goes directly to the local guides.
-                    It also makes your
-                    trip
-                    more
-                    affordable!</p>
+                <p class="card-text">You will leave those worries behind, because you will arrive at your
+                    destination.
+                    Maybe it will be a bustling city, maybe a tranquil lake, maybe you will get lost in the mountains
+                    for a few months. for sure your trip will unforgetable.
+                </p>
             </div>
         </div>
+    </div> -->
+<div class="card my-card">
+    <div class="card-container">
+        <!-- <div class="card"> -->
+        <div class="card-count-container">
+            <!-- <div class="card-count">1</div> -->
+        </div>
+
+        <div class="card-content">
+            <h3>Lifelong Memories</h3>
+            Itineraries are expertly designed, by local guides who know their area best.That's why our programs are
+            created by our destination experts who have first-hand knowledge of the route, the terrain, and the
+            type,
+            duration and frequency of activities offered.
+        </div>
+
+        <!-- <div class="card-footer">
+                DISCOVER ALBANIA
+            </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="card"> -->
+        <div class="card-count-container">
+            <!-- <div class="card-count">2</div> -->
+        </div>
+        <div class="card-content">
+            <h3>Hassle-Free Booking</h3>
+            We pick the very best guides (we're qualified mountain guides ourselves).Although our standards have
+            always
+            been exceptionally high, we have elevated our protocols to help our guests plan, book and travel with
+            confidence and provide the assurance that we all need.
+        </div>
+
+        <!-- <div class="card-footer">
+                DISCOVER ALBANIA
+            </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="card"> -->
+        <div class="card-count-container">
+            <!-- <div class="card-count">3</div> -->
+        </div>
+        <div class="card-content">
+            <h3>Your Trusted Travel Companion</h3>
+            If you believe in having a positive impact on the places you visit, connecting with the communities you
+            meet
+            and learning through your journey, then you're in the right place. We make sure as much of your payment
+            as
+            possible goes directly to the local guides.
+        </div>
+
+        <!-- <div class="card-footer">
+                DISCOVER ALBANIA
+            </div> -->
+        <!-- </div> -->
     </div>
+    <div class="card-footer">
+        DISCOVER ALBANIA
+    </div>
+</div>
 
-
-
+<div class="container">
     <!--bringing up some popular trips-->
     <div class="row">
-        <h3 class="popular-trips">Popular Trips</h3>
+        <p class="popular-trips">Popular Trips</p>
         <!-- <div class="popular-trips-one shadow-lg p-0 mb-5 bg-body rounded" style="width: 18rem;">
             <img src="assets/images/home-pictures/beach.jpg" class="card-img-top rounded" alt="...">
             <div class="card-body">
@@ -110,10 +178,20 @@
     </div> -->
 
         <!-- bringing up some upcoming tours -->
+        <!-- <section class="packages" id="packages">
+            <div class="box-container">
+                <h3 class="upcoming-trips">Upcoming Trips</h3>
+                <trip-card *ngFor="let trip of upComing" [trip]="trip" class="box mb-3 text-center"
+                    style="width: 15rem;">
 
+                </trip-card>
+            </div>
+
+        </section> -->
         <div class="row">
-            <h3 class="upcoming-trips">Upcoming Trips</h3>
-            <trip-card *ngFor="let trip of upComing" [trip]="trip" class="box mb-3 text-center" style="width: 15rem;">
+            <p class="upcoming-trips">Upcoming Trips</p>
+            <trip-card *ngFor="let trip of upComing" [trip]="trip" class="box mb-3 text-center upcoming-card"
+                style="width: 15rem;">
 
             </trip-card>
             <!-- <div class="upcoming-trips-one shadow-lg p-0 mb-5 bg-body rounded " style="width: 18rem;">
@@ -169,6 +247,7 @@
         </div> -->
 
     </div>
+
 
 
 </div>
