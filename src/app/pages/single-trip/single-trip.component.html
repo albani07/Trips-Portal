@@ -99,7 +99,7 @@
 <br />
 <div class="container">
   <div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
+    <div class="accordion-item" *ngFor="let itinerary of trip.itineraries">
       <h2 class="accordion-header" id="flush-headingOne">
         <button
           class="accordion-button collapsed"
@@ -109,7 +109,7 @@
           aria-expanded="false"
           aria-controls="flush-collapseOne"
         >
-          <b>Day 1</b>
+          {{ itinerary.title }}
         </button>
       </h2>
       <div
@@ -119,55 +119,7 @@
         data-bs-parent="#accordionFlushExample"
       >
         <div class="accordion-body font">
-          {{ trip.itinerary[0] }}
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#flush-collapseTwo"
-          aria-expanded="false"
-          aria-controls="flush-collapseTwo"
-        >
-          <b>Day 2</b>
-        </button>
-      </h2>
-      <div
-        id="flush-collapseTwo"
-        class="accordion-collapse collapse"
-        aria-labelledby="flush-headingTwo"
-        data-bs-parent="#accordionFlushExample"
-      >
-        <div class="accordion-body font">
-          {{ trip.itinerary[1] }}
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#flush-collapseThree"
-          aria-expanded="false"
-          aria-controls="flush-collapseThree"
-        >
-          <b>Day 3</b>
-        </button>
-      </h2>
-      <div
-        id="flush-collapseThree"
-        class="accordion-collapse collapse"
-        aria-labelledby="flush-headingThree"
-        data-bs-parent="#accordionFlushExample"
-      >
-        <div class="accordion-body font">
-          {{ trip.itinerary[2] }}
+          <b>{{ itinerary.description }}</b>
         </div>
       </div>
     </div>
@@ -243,7 +195,7 @@
       <div class="row">
         <div class="booking-form">
           <div class="booking-bg"></div>
-          <form>
+          <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
             <div class="form-header">
               <h2>Book now</h2>
             </div>
@@ -251,13 +203,23 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <span class="form-label">From</span>
-                  <input class="form-control" type="date" required />
+                  <input
+                    class="form-control"
+                    type="date"
+                    formControlName="startDate"
+                    required
+                  />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <span class="form-label">To</span>
-                  <input class="form-control" type="date" required />
+                  <input
+                    class="form-control"
+                    type="date"
+                    formControlName="endDate"
+                    required
+                  />
                 </div>
               </div>
             </div>
@@ -265,7 +227,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <span class="form-label">Adults</span>
-                  <select class="form-control">
+                  <select class="form-control" formControlName="adults">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -276,7 +238,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <span class="form-label">Children</span>
-                  <select class="form-control">
+                  <select class="form-control" formControlName="children">
                     <option>0</option>
                     <option>1</option>
                     <option>2</option>
@@ -291,6 +253,7 @@
                 class="form-control"
                 type="email"
                 placeholder="Enter your email"
+                formControlName="email"
               />
             </div>
             <div class="form-group">
@@ -299,6 +262,7 @@
                 class="form-control"
                 type="tel"
                 placeholder="Enter your phone number"
+                formControlName="phone"
               />
             </div>
             <div class="form-btn">

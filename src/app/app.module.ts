@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
+
 // import { ExampleComponent } from './example/example.component';
 import { HomeContentComponent } from './pages/home-content/home-content.component';
 import { TripsComponent } from './pages/trips/trips.component';
@@ -19,10 +20,9 @@ import { JoinOurTeamComponent } from './pages/join-our-team/join-our-team.compon
 import { TripCardComponent } from './shared/cards/trip-card/trip-card.component';
 import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
-
 import { ContactComponent } from './pages/contact/contact.component';
 import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-trip-card.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-
     // ExampleComponent,
     HomeContentComponent,
     TripsComponent,
+    ContactComponent,
     NavbarComponent,
     // HomeComponent,
     LoginComponent,
@@ -38,7 +39,6 @@ import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-
     TripCardComponent,
     SingleTripComponent,
     SingleTripCardComponent,
-    ContactComponent
     // LocalStorageDataServiceComponent,
   ],
   imports: [
@@ -49,7 +49,8 @@ import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-
     MatButtonModule,
     MatIconModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

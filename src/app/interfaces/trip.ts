@@ -1,5 +1,7 @@
 // import { Itinerary } from './itenerary';
 
+import { Itineraries } from './itenerary';
+
 export interface Trip {
   id: string;
   destinationName: string;
@@ -16,7 +18,7 @@ export interface Trip {
   // reccomandations: string,
   longDescription1?: string;
   longDescription2?: string;
-  itinerary?: string[];
+  itineraries?: Itineraries;
   img1?: string;
   img2?: string;
   img3?: string;
