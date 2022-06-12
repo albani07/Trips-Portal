@@ -72,9 +72,26 @@ export class TripService extends LocalStorageDataServiceService {
       recommend to visit Theth Albania anywhere between July to October.
       Around the end of October and the beginning of November the facilities
       in and around Theth close for winter.`,
-        // itinerary: [
-        //   // 'Hike to the blue eye: The water is incredibly blue, clear and cold! It looks extremely tempting to jump in and swim but, think twice! See the Grunas waterfall: This is a short one hour hike from Theth, and therefore a fun and easy thing to do in Theth',
-        // ],
+        itineraries: [
+          {
+            title: 'Day 1',
+            description: `Hike to the blue eye: 
+            The water is incredibly blue, clear and cold! It looks extremely tempting to jump in and swim but, think twice!
+            See the Grunas waterfall:
+            This is a short one hour hike from Theth, and therefore a fun and easy thing to do in Theth!`,
+          },
+          {
+            title: 'Day 2',
+            description: `Explore the village and experience the guesthouse: 
+            Depending on your guesthouse, you might have some activities to do. You could feed the farm animals, hang out in the community area with a cozy fireplace, eat traditional Albanian foods and interact with other travelers!`,
+          },
+          {
+            title: 'Day 3',
+            description: `Hike from Theth to Valbona
+            This is such an iconic hike! You hike from the village of Theth to the village of Valbona, which is about an 8 hour hike in total.
+            Several websites suggest that this hike is easy to intermediate, but we don’t think so. We though this hike was strenuous, because of the elevation (you get out of breath sooner), you walk steep up the mountain for several hours and you walk on loose rocks (difficult to get a grip).`,
+          },
+        ],
         img1: '../../assets/images/single-trip-pictures/theth1.jpg',
         img2: '../../assets/images/single-trip-pictures/theth4.jpg',
         img3: '../../assets/images/single-trip-pictures/theth3.jpg',
@@ -104,7 +121,24 @@ export class TripService extends LocalStorageDataServiceService {
       In April, Korca hosts a two-week-long Spring Fair with outdoor markets and parades. In June, there's Carnival, in July the Lakror Fest (celebrating the city's favourite pie and its culinary traditions), in August the Beer Fest, and in October the Apple Fest.
       Whenever you decide to visit, there's a good chance there will be a special event taking place.
       `,
-        // itinerary: Array < Itinerary >
+        itineraries: [
+          {
+            title: 'Day 1',
+            description: `Museums: 
+            VISIT THE GJON MILI PHOTOGRAPHY MUSEUM,
+            POP INTO THE ARCHAEOLOGICAL MUSEUM,
+            ADMIRE THE ICONS AT THE NATIONAL MUSEUM OF MEDIEVAL ART.
+            `,
+          },
+          {
+            title: 'Day 2',
+            description: `
+            STEP INSIDE THE RESURRECTION OF CHRIST CATHEDRAL, ALBANIA’S LARGEST ORTHODOX CHURCH,
+            DISCOVER THE HISTORY OF THE ALBANIAN LANGUAGE AT THE FIRST ALBANIAN SCHOOL & MUSEUM OF EDUCATION,
+           STOP BY THE STUNNING MIRAHORI MOSQUE
+           `,
+          },
+        ],
         img1: '../../assets/images/single-trip-pictures/korca1.jpg',
         img2: '../../assets/images/single-trip-pictures/korca2.jpg',
         img3: '../../assets/images/single-trip-pictures/korca3.jpg',
@@ -133,6 +167,29 @@ export class TripService extends LocalStorageDataServiceService {
 
       Between the unusual Berat Kala and the medieval bazaar, historic mosques, local cuisine, a lively cafe scene and one of the handsomest Ethnographic Museums in the Balkans, Berat has a lot to offer. Not to mention the spectacular valleys, canyons and wineries within easy reach of the city. There are so many reasons to add a few days in Berat to your Albania itinerary.
       `,
+        itineraries: [
+          {
+            title: 'Day 1',
+            description: `Museums
+            ADMIRE THE RELICS AT THE ONUFRI ICONOGRAPHY MUSEUM
+            IMMERSE YOURSELF IN LOCAL HISTORY AT THE NATIONAL ETHNOGRAPHIC MUSEUM
+            SEEK OUT THE CLUTCH OF HISTORIC MOSQUES
+            `,
+          },
+          {
+            title: 'Day 2',
+            description: `CLIMB TO BERAT CASTLE (BERAT KALA) FOR INCREDIBLE VIEWS
+            FIND THE CHURCH OF THE HOLY TRINITY
+            `,
+          },
+          {
+            title: 'Day 3',
+            description: `EXPLORE THE MANGALEM QUARTER, 
+            EAT TRADITIONAL FOOD AT A BERATI RESTAURANT, 
+            SUMMIT GORICA HILL FOR A SUNSET PANORAMA
+            `,
+          },
+        ],
         img1: '../../assets/images/single-trip-pictures/berat1.jpg',
         img2: '../../assets/images/single-trip-pictures/berat2.jpg',
         img3: '../../assets/images/single-trip-pictures/berat3.jpg',

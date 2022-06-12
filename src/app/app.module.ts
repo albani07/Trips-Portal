@@ -22,7 +22,7 @@ import { SingleTripComponent } from './pages/single-trip/single-trip.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SingleTripCardComponent } from './shared/cards/single-trip-card/single-trip-card.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,7 +49,8 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
